@@ -1,0 +1,15 @@
+/***** CSS placed here will be applied to all skins on the entire site. *****/
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:Button.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomIcons.css&only=styles";
+
+/* Mark redirects in Special:Allpages and Special:Watchlist */
+.allpagesredirect {
+   font-style: italic;
+}
+.allpagesredirect:after {
+   color: #808080; content: " (redirect)"
+}
+.watchlistredir {
+   font-style: italic;
+}
