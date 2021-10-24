@@ -2,6 +2,13 @@
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:Button.css&only=styles";
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles";
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomIcons.css&only=styles";
+@import "/load.php?mode=articles&articles=MediaWiki:Badges.css&only=styles";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* Dev imports */
+@import url('/load.php?debug=false&lang=en&mode=articles&articles=u:dev:MediaWiki:FandomIcons.css|u:dev:MediaWiki:FandomizedActivityFeed.css|u:justleafy:MediaWiki:WDSSpinners/code.css|u:dev:MediaWiki:Button.css|u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles');
+/* Internal imports */
+@import "/load.php?mode=articles&articles=MediaWiki:Themes.css&only=styles";
 
 /* Mark redirects in Special:Allpages and Special:Watchlist */
 .allpagesredirect {
@@ -12,4 +19,819 @@
 }
 .watchlistredir {
    font-style: italic;
+}
+
+a[href$="Purzyckij"],
+a[href$="NameOfUser57"],
+a[href$="Cluckster"] {
+    font-weight: bold !important;
+    color: #00ff00 !important;
+}
+
+a[href$="BadBlitz808"],
+a[href$="Tylerota2"],
+a[href$="Nintendofan885"],
+a[href$="BlindCartographer"], 
+a[href$="JustLeafy"],
+a[href$="Boomer77wastaken"],
+a[href$="AphidBlade67"] {
+    font-weight: bold !important;
+    color: #ff6965 !important;
+}
+
+a[href$="Johncocek3"],
+a[href$="JakCooperThePlumber"],
+a[href$="SuperStario89"],
+a[href$="Mebh%20Og%20MacTire"],
+a[href$="Mebh_Og_MacTire"],
+a[href$="Zixella"] {
+    color: #8b76ff !important;
+    font-weight: bold !important;
+}
+
+a[href$="Aparrently"],
+a[href$="Ye9"],
+a[href$="StarGroupPlayz"],
+a[href$="Enayy"] {
+    font-weight: bold !important;
+    color: #c98aff !important;
+}
+
+
+a[href$="BloodSushi"],
+a[href$="Nihonium"],
+a[href$="ItzWolfyTDM"],
+a[href$="ToonSmart"] {
+    font-weight: bold !important;
+    color: #c27c0e !important;
+}
+
+a[href$="FkeBld"],
+a[href$="BoaDaSnakeMan"],
+a[href$="Nisk00n"] {
+    font-weight: bold !important;
+    color: #7289DA !important;
+}
+
+a[href$="Helperbot5000"],
+a[href$="SidemenXIX-bot"],
+a[href$="YouTube Wiki Bot"],
+a[href$="ThisIsACreeper0202"] {
+    font-weight: bold !important;
+}
+
+#mpmodule {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#mpmodule2 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#mpmodule3 {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#mpmodule4 {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mptext {
+    letter-spacing: 2.5px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.references-small {
+    font-size: 90%;
+}
+
+.mw-parser-output .mw-references-wrap {
+    clear: none;
+}
+
+#tcenter {
+    text-align: center;
+}
+
+#mainwiki {
+    position: absolute;
+    top: -65px;
+}
+
+/* make strawpolls long */
+.strawpoll {
+    height: 600px;
+}
+
+.group-wrapper .mw-collapsed span {  
+	float: unset;
+}  
+.group-wrapper .mw-collapsed { 
+	text-align: right;  
+}
+
+.wikia-menu-button.control-button .chevron {
+    border-color: #ffffff transparent transparent transparent !important;
+    display: inline !important;
+    margin: 5px 3px 0 3px;
+}
+
+ul.tabbernav {
+    border-bottom: 0 solid !important;
+    font-size: 14px;
+    font-weight: normal !important;
+}
+
+ul.tabbernav li a {
+    padding: 10px !important;
+    margin-left: 0 !important;
+    color: white !important;
+    border: none !important;
+    background: none !important;
+}
+
+ul.tabbernav li a:link {
+    color: red !important;
+}
+
+ul.tabbernav li a:visited {
+    color: #FFE3EB !important;
+}
+
+ul.tabbernav li a:hover {
+    color: white !important;
+    background: red !important;
+    border: none !important;
+    font-weight: normal !important;
+}
+
+ul.tabbernav li.tabberactive a {
+    background-color: #cc181e !important;
+    border-bottom: none;
+    color: white !important;
+    font-weight: normal !important;
+}
+
+.tabberlive {
+    width: 100% !important;
+}
+
+.tabberlive .tabbertab {
+    border: none !important;
+    padding: 0px !important;
+}
+
+.tabs {
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    padding-bottom: 2px;
+}
+
+.tabs li a {
+    border: none;
+    border-radius: 0;
+    top: 0;
+}
+
+.tabs li a:hover {
+    text-decoration: none;
+    color: white !important;
+    background-color: red;
+}
+
+.tabs .selected a {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #cc181e;
+    color: white !important;
+    border: none;
+}
+
+.tabs .selected a:hover {
+    background-color: #cc181e;
+}
+
+.WikiaArticle .editsection {
+    text-transform: lowercase;
+    font-weight: normal !important;
+}
+
+.WikiaArticle h3 {
+    font-weight: bold;
+}
+
+.WikiaArticle .thumbinner {
+    background-color: #E6E6FA !important;
+    background-image: none !important;
+}
+
+.WikiaArticleCategories,
+.wikitable {
+    background-image: none !important;
+}
+
+.wikitable,
+table.wikitable {
+    background: none !important;
+}
+
+#toc,
+.toc {
+    background: #1b2d3d;
+    border: none;
+}
+
+.WikiaArticle #pagehistory li.selected {
+    padding: 0 5px;
+    border: none;
+    background-color: rgba(255, 153, 153, 0.5);
+}
+
+.WikiaFooter .toolbar .tools > li > a,
+.WikiaBarWrapper .toolbar .tools > li > a {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.wikia-menu-button .WikiaMenuElement {
+    border: 0 !important;
+    box-shadow: 0 0 !important;
+    top: 22px !important;
+}
+
+#WikiaMainContent,
+#WikiaRail,
+.Wall textarea,
+.category-gallery-item .snippet .text,
+a.wikia-button,
+.wikia-single-button a,
+.wikia-menu-button,
+input,
+.button,
+button,
+select {
+    font-family: 'Roboto', sans-serif !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div.mw-warning-with-logexcerpt {
+    border: 2px solid #ff0000;
+}
+
+.wikia-page-header .header-container {
+    border: 0;
+}
+
+.WikiaArticle fieldset {
+    border: solid 1px #ff0000;
+}
+
+.mw-parser-output .thumbcaption p.title {
+	color: white;
+}
+
+div#wikia-mediawiki-recentchangestext {
+    border: 2px solid #ff0000 !important;
+}
+
+hr {
+    border: 1px red dotted;
+}
+
+.pi-europa .pi-header, .pi-europa .pi-title {
+	background-color: #c7080a;
+    color: #FFFFFF;
+}
+
+.pi-europa .pi-title {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.pi-image {
+	text-align: center;
+    background-color: #FF0000B3;
+}
+
+.pi-europa.pi-background {
+    background-color: #1E2D3B;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pi-europa .pi-navigation {
+    background-color: #960608;
+    color: inherit;
+    font-weight: inherit;
+    text-align: center;
+}
+
+.pi-europa .pi-navigation a {
+    color: white;
+}
+
+.pi-europa .pi-image-collection-tabs {
+    background-color: #1E2D3B;
+    text-align: center;
+}
+
+.pi-europa .pi-image-collection-tabs .current {
+    background-color: #274159;
+    border: #ff0000 1px dashed;
+}
+
+.page-header__eraicons {
+    float: right;
+}
+
+div#icons {
+	margin-top: -21px;
+}
+
+.eraicon.wds-dropdown {
+    margin-inline-start: 3px;
+}
+
+span.eraicon-dropdown {
+    vertical-align: top;
+    background: #403e3e;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    min-width: 200px;
+    text-align: center;
+}
+
+.banner-notification.confirm {
+    background: #ff7f7f;
+    border: red;
+    color: black;
+}
+
+.banner-notification.confirm a {
+    color: crimson;
+}
+
+.editpage-sourcewidemode.mode-source .editpage-widemode-trigger .arrow {
+    border-left-color: darkred;
+}
+
+.EditPageToolbar .cke_toolbar_expand > a label {
+    text-transform: uppercase;
+}
+
+.sharedHelp {
+    border: none;
+}
+
+.WikiaFooter section,
+.WikiaBarWrapper section {
+    background-color: transparent;
+    border: none;
+}
+
+.deleteorremove-infobox {
+    border-top: 0;
+}
+
+p.login {
+    font-size: 15px;
+}
+
+.WikiaBarWrapper .wikia-bar .wikiabar-button {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#WikiaMainContent h1,
+.WikiaPage h2:not(.pi-item),
+.WikiaPage h3:not(.pi-data-label),
+.WikiaPage h4,
+.WikiaPage h5,
+.WikiaPage h6 {
+    border-bottom: 0;
+}
+
+#HOME_TOP_RIGHT_BOXAD {
+    margin-bottom: 20px !important;
+}
+
+.WikiaPage .editsection img {
+    display: none;
+}
+
+.WikiaBarWrapper {
+    background-image: none;
+    box-shadow: none;
+}
+
+.WikiaFooter .toolbar,
+.WikiaBarWrapper .toolbar {
+    background-color: red;
+    background-image: none;
+}
+
+.accent {
+    border-color: red;
+}
+.oo-ui-popupWidget-popup {
+    width: auto !important;
+}
+
+.discussions-module {
+    text-align: center;
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+ 
+.discussions-module-description {
+    white-space: pre-line;
+}
+
+.discussions-button a {
+    background: #ff0000;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    margin: 14px 0;
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.discussions-button a:hover {
+    background-color: #ff3333;
+    text-decoration: none;
+}
+
+.discussion-module .discussion-threads .discussion-thread {
+    background: rgba(255,0,0,0.1);
+    border: 0;
+}
+
+.discussion-module .discussion-threads .discussion-thread:hover {
+    background: rgba(255,0,0,0.2);
+}
+
+/* sprite edit images */
+.WikiaArticle .editsection img.sprite.edit-pencil {
+    background: url("/extensions/wikia/CommunityPage/images/edit-pen.svg") no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+ 
+.WikiaPageHeader .sprite.edit-pencil {
+    background: url("/extensions/wikia/CommunityPage/images/edit-pen-dark.svg") no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+ 
+.WikiaPageHeader .sprite.lock {
+    height: 16px;
+    width: 16px;
+    background: url("https://images.wikia.nocookie.net/central/images/9/9e/Edit-lock-dark.png") no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+a.tag {
+    color: inherit;
+}
+
+/* Right rail design */
+ 
+.rail-module,
+.insights-module,
+.HotSpotsModule,
+.CommunityCornerModule,
+.AchievementsModule,
+.FollowedPagesModule{
+    background-color: clear !important;
+    padding: 9px;
+    border: 2px red !important;
+    border-radius: 5%;
+}
+ 
+.photo-module {
+    padding-bottom: 28px !important;
+}
+ 
+.photo-module > a {
+    background-color: brown;
+    color: goldenrod;
+    padding: 2px;
+    border: 1.5px solid gold;
+    border-radius: 10% !important;
+}
+ 
+/* adds border around elements in siderail */
+.WikiaRail .rail-module, .community-page-help-module, .community-page-card-module, .WikiaArticleCategories {
+    border: 2px solid #DC143C !important;
+    vertical-align: text-bottom !important;
+    border-radius: 5px !important;
+}
+
+#SliderView {
+  background: transparent;
+  width: 100%;  
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+}
+#SliderWrapper {
+  position: relative;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+  transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+#SliderWrapper, #SliderWrapper ul, #SliderWrapper li, #NavBtns, #NavBtns ul {
+  margin: 0px;
+  padding: 0px;
+}
+#NavBtns li {
+  margin: 0px;
+}
+ 
+.Sld {
+  height: auto;
+  list-style: none;
+  display: inline;
+  float: left;
+}
+ 
+.SlideIMG {
+  width: 100%;
+}
+.SlideIMG img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  min-width: 100%; 
+  min-height: 100%; 
+  position: relative;  
+}
+ 
+#NavBtns {
+  position: absolute; 
+  display: block;
+}
+.NavBtn {
+  position: relative;
+  display: block;
+  top: 0px;
+  width: auto;
+  height: auto;
+  list-style: none;
+  margin: 0px;
+  background: transparent;
+}
+ 
+.nmLeft {
+  height: 100%;
+  left: 0px;
+  background: linear-gradient(to right, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
+}
+.nmLeft li {
+  list-style: none;   
+  padding: 10px 100px 10px 10px;
+}
+.nmLeft li:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
+}
+ 
+.nmRight {
+  height: 100%;
+  right: 0px;
+  background: linear-gradient(to left, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
+  text-align: left;
+}
+.nmRight li {
+  list-style: none;   
+  padding: 10px 10px 10px 100px;
+}
+.nmRight li:hover {
+  cursor: pointer;
+  background: linear-gradient(to left, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
+}
+ 
+.nmTop {
+  width: 100%;
+  top: 0px;
+  background: linear-gradient(to bottom, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
+  text-align: left;
+}
+.nmTop li {
+  display: inline-block;
+  list-style: none;   
+  padding: 10px 10px 20px 10px;
+}
+.nmTop li:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
+}
+ 
+.nmBottom {
+  width: 100%;
+  bottom: 0px;
+  background: linear-gradient(to top, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
+  text-align: left;
+}
+.nmBottom li {
+  display: inline-block;
+  list-style: none;   
+  padding: 20px 10px 10px 10px;
+}
+.nmBottom li:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
+}
+ 
+.nbActiveLeft {
+  background: linear-gradient(to right, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
+}
+.nbActiveRight {
+  background: linear-gradient(to left, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
+}
+.nbActiveTop {
+  background: linear-gradient(to bottom, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
+}
+.nbActiveBottom {
+  background: linear-gradient(to top, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
+}
+svg#wds-icons-dropdown-tiny {
+ transition: transform 0.2s;
+}
+/* Making the rail similar to the one on discussions */
+ 
+.WikiaRail .rail-module {
+    background-color: transparent;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+ 
+.WikiaRail .rail-module h2 {
+    background-image: linear-gradient(to top, rgba(145,145,145,0.15) 43%, transparent 43%, transparent 100%);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-size: 18px;
+    font-weight: 500 !important;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    padding: 0 3px;
+    text-transform: uppercase;
+    border: none;
+}
+/* Mark redirects in Special:Allpages and Special:Watchlist */
+.allpagesredirect {
+   font-style: italic;
+}
+.allpagesredirect:after {
+   color: #808080; content: " (redirect)"
+}
+.watchlistredir {
+   font-style: italic;
+}
+/* custom notices */
+
+.notice {
+    background-color: #EEE;
+    border-collapse: collapse;
+    border-left: 10px solid #404A57;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.notice.red {
+    border-left: 10px solid #BA0000;
+}
+.notice.orange {
+    border-left: 10px solid #F28500;
+}
+.notice.yellow {
+    border-left: 10px solid #F4C430;
+}
+.notice.purple {
+    border-left: 10px solid #9932CC;
+}
+.notice.blue {
+    border-left: 10px solid #1E90FF;
+}
+.notice.gray {
+    border-left: 10px solid #BBA;
+}
+.notice .notice__content {
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+}
+.notice .notice__title {
+    font-size: larger;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.notice .notice__text {
+    margin: 0;
+    padding: 0.25em 0.5em;
+}
+.wds-community-header__wordmark:hover {
+animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+ 
+@keyframes shake {
+10%, 90% {
+transform: translate3d(-1px, 0, 0);
+}
+ 
+20%, 80% {
+transform: translate3d(2px, 0, 0);
+}
+ 
+30%, 50%, 70% {
+transform: translate3d(-4px, 0, 0);
+}
+ 
+40%, 60% {
+transform: translate3d(4px, 0, 0);
+}
+}
+.tally span {
+    font-family: rubik;
+}
+.WikiaMainContent pre {
+    background-color: #000000e6;
+}
+.community-page-header-welcome-message,
+.community-page-subheader-welcome-message {
+    text-shadow: 0px 0px 7px #000;
+}
+
+.theme-fandomdesktop-dark .portable-infobox {
+	--pi-background: rgba(128,0,0,0.7) !important;
+}
+
+.theme-fandomdesktop-light #toc, .theme-fandomdesktop-light .toc {
+	background: #f18282;
+}
+
+.wds-tabs__tab:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8B0000;
+}
+
+body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
+  filter: invert(1);
+}
+
+.fandom-sticky-header__sitename {
+    display: none;
 }
