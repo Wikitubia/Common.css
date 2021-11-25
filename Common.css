@@ -17,6 +17,7 @@
 .allpagesredirect:after {
    color: #808080; content: " (redirect)"
 }
+
 .watchlistredir {
    font-style: italic;
 }
@@ -33,6 +34,7 @@ a[href$="Tylerota2"],
 a[href$="Nintendofan885"],
 a[href$="BlindCartographer"], 
 a[href$="JustLeafy"],
+a[href$="Nisk00n"],
 a[href$="Boomer77wastaken"],
 a[href$="AphidBlade67"] {
     font-weight: bold !important;
@@ -49,10 +51,10 @@ a[href$="Zixella"] {
     font-weight: bold !important;
 }
 
-a[href$="Aparrently"],
 a[href$="Ye9"],
 a[href$="StarGroupPlayz"],
-a[href$="Enayy"] {
+a[href$="Enayy"],
+a[href$="Spongeboy_reginald_peterson_the_2%27nd"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -61,14 +63,13 @@ a[href$="Enayy"] {
 a[href$="BloodSushi"],
 a[href$="Nihonium"],
 a[href$="ItzWolfyTDM"],
-a[href$="ToonSmart"] {
+a[href$="ToonSmart"],
+a[href$="Vilase"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-a[href$="FkeBld"],
-a[href$="BoaDaSnakeMan"],
-a[href$="Nisk00n"] {
+a[href$="BoaDaSnakeMan"] {
     font-weight: bold !important;
     color: #7289DA !important;
 }
@@ -834,4 +835,9 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
 
 .fandom-sticky-header__sitename {
     display: none;
+}
+/* Hide stuff meant for accounts with special permissions. Made visible again in [[MediaWiki:Group-sysop.css]] */
+.sysop-show,
+{
+	display: none;
 }
