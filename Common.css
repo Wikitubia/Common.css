@@ -42,11 +42,14 @@ a[href$="AphidBlade67"] {
 }
 
 a[href$="Johncocek3"],
-a[href$="JakCooperThePlumber"],
 a[href$="SuperStario89"],
 a[href$="Mebh%20Og%20MacTire"],
 a[href$="Mebh_Og_MacTire"],
-a[href$="Zixella"] {
+a[href$="Zixella"],
+a[href$="Nihonium"],
+a[href$="ItzWolfyTDM"],
+a[href$="Good_Ones_Out"],
+a[href$="Good%20Ones%20Out"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -54,30 +57,23 @@ a[href$="Zixella"] {
 a[href$="Ye9"],
 a[href$="StarGroupPlayz"],
 a[href$="Enayy"],
-a[href$="Spongeboy_reginald_peterson_the_2%27nd"] {
+a[href$="Spongeboy_reginald_peterson_the_2%27nd"],
+a[href$="StarS%20The%20Songaholic"],
+a[href$="StarS_The_Songaholic"]
+{
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 
 a[href$="BloodSushi"],
-a[href$="Nihonium"],
-a[href$="ItzWolfyTDM"],
 a[href$="ToonSmart"],
-a[href$="Vilase"] {
+a[href$="Somebodyidkfkdktd"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-a[href$="BoaDaSnakeMan"] {
-    font-weight: bold !important;
-    color: #7289DA !important;
-}
-
-a[href$="Helperbot5000"],
-a[href$="SidemenXIX-bot"],
-a[href$="YouTube Wiki Bot"],
-a[href$="ThisIsACreeper0202"] {
+a[href$="BlindBotographer"] {
     font-weight: bold !important;
 }
 
@@ -837,7 +833,7 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
     display: none;
 }
 /* Hide stuff meant for accounts with special permissions. Made visible again in [[MediaWiki:Group-sysop.css]] */
-.sysop-show,
+.sysop-show
 {
 	display: none;
 }
