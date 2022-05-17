@@ -29,15 +29,13 @@ a[href$="Cluckster"] {
     color: #00ff00 !important;
 }
 
-a[href$="BadBlitz808"],
 a[href$="Tylerota2"],
 a[href$="Nintendofan885"],
 a[href$="BlindCartographer"], 
 a[href$="JustLeafy"],
 a[href$="Nisk00n"],
-a[href$="Boomer77wastaken"],
-a[href$="AphidBlade67"] {
-    font-weight: bold !important;
+a[href$="Axayla"] {
+font-weight: bold !important;
     color: #ff6965 !important;
 }
 
@@ -45,11 +43,10 @@ a[href$="Johncocek3"],
 a[href$="SuperStario89"],
 a[href$="Mebh%20Og%20MacTire"],
 a[href$="Mebh_Og_MacTire"],
-a[href$="Zixella"],
-a[href$="Nihonium"],
 a[href$="ItzWolfyTDM"],
 a[href$="Good_Ones_Out"],
-a[href$="Good%20Ones%20Out"] {
+a[href$="Good%20Ones%20Out"],
+a[href$="Somebodyidkfkdktd"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -57,24 +54,28 @@ a[href$="Good%20Ones%20Out"] {
 a[href$="Ye9"],
 a[href$="StarGroupPlayz"],
 a[href$="Enayy"],
-a[href$="Spongeboy_reginald_peterson_the_2%27nd"],
-a[href$="StarS%20The%20Songaholic"],
-a[href$="StarS_The_Songaholic"]
-{
+a[href$="IceCuber36"],
+a[href$="5090061uusd"],
+a[href$="Gen1chiroe"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 
 a[href$="BloodSushi"],
-a[href$="ToonSmart"],
-a[href$="Somebodyidkfkdktd"] {
+a[href$="JowaPlays"],
+a[href$="KeeBlokk"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
 a[href$="BlindBotographer"] {
     font-weight: bold !important;
+}
+
+a[href$="Spongebob456"] {
+    font-weight: bold !important;
+    color: #00d6d6 !important;
 }
 
 #mpmodule {
@@ -836,4 +837,48 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
 .sysop-show
 {
 	display: none;
+}
+
+/* Page indicators */
+.page-header .page-header__indicators.mw-indicators {
+  position: relative;
+  left: 50%;
+  width: fit-content;
+}
+/*Pageindicator Tooltips*/
+.tooltip {
+	position:relative;
+	display:inline-block;
+}
+.tooltip .tooltip-text {
+	visibility:hidden;
+	width:150px;
+	background-color:rgba(112, 112, 112, 0.8);
+	color:#fff;
+	text-align:center;
+	padding:5px 2px;
+	border-radius:5px;
+	/*Something*/
+	position:absolute;
+	z-index:201;
+	top:100%;
+	left:50%;
+	margin-left: -75px;
+}
+.tooltip:hover .tooltip-text {
+	visibility:visible;
+}
+.tooltip .tooltip-text::after {
+	content:" ";
+	position:absolute; 
+	bottom:100%;
+	left:50%;
+	margin-left: -5px;
+	border-width:5px;
+	border-style:solid;
+	border-color:transparent transparent rgba(112, 112, 112, 0.8) transparent;
+}
+.page-content aside.portable-infobox ul {
+    list-style-type: none;
+    margin: 0;
 }
