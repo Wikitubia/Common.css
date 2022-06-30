@@ -29,56 +29,55 @@ a[href$="Cluckster"] {
     color: #00ff00 !important;
 }
 
-a[href$="BadBlitz808"],
 a[href$="Tylerota2"],
 a[href$="Nintendofan885"],
 a[href$="BlindCartographer"], 
 a[href$="JustLeafy"],
 a[href$="Nisk00n"],
-a[href$="Boomer77wastaken"],
-a[href$="AphidBlade67"] {
-    font-weight: bold !important;
+a[href$="Axayla"],
+a[href$="Good_Ones_Out"],
+a[href$="Good%20Ones%20Out"] {
+font-weight: bold !important;
     color: #ff6965 !important;
 }
 
 a[href$="Johncocek3"],
-a[href$="JakCooperThePlumber"],
 a[href$="SuperStario89"],
 a[href$="Mebh%20Og%20MacTire"],
 a[href$="Mebh_Og_MacTire"],
-a[href$="Zixella"] {
+a[href$="ItzWolfyTDM"],
+a[href$="Somebodyidkfkdktd"],
+a[href$="KeeBlokk"],
+a[href$="BloodSushi"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
 
 a[href$="Ye9"],
 a[href$="StarGroupPlayz"],
+a[href$="IceCuber36"],
+a[href$="5090061uusd"],
+a[href$="Gen1chiroe"],
+a[href$="Headquarter8302"],
 a[href$="Enayy"],
-a[href$="Spongeboy_reginald_peterson_the_2%27nd"] {
+a[href$="ARavagingStar"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 
-a[href$="BloodSushi"],
-a[href$="Nihonium"],
-a[href$="ItzWolfyTDM"],
-a[href$="ToonSmart"],
-a[href$="Vilase"] {
+a[href$="JowaPlays"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-a[href$="BoaDaSnakeMan"] {
+a[href$="BlindBotographer"] {
     font-weight: bold !important;
-    color: #7289DA !important;
 }
 
-a[href$="Helperbot5000"],
-a[href$="SidemenXIX-bot"],
-a[href$="YouTube Wiki Bot"],
-a[href$="ThisIsACreeper0202"] {
+a[href$="Spongebob456"] {
     font-weight: bold !important;
+    color: #00d6d6 !important;
 }
 
 #mpmodule {
@@ -548,11 +547,6 @@ a.tag {
 }
  
 /* adds border around elements in siderail */
-.WikiaRail .rail-module, .community-page-help-module, .community-page-card-module, .WikiaArticleCategories {
-    border: 2px solid #DC143C !important;
-    vertical-align: text-bottom !important;
-    border-radius: 5px !important;
-}
 
 #SliderView {
   background: transparent;
@@ -694,27 +688,7 @@ a.tag {
 svg#wds-icons-dropdown-tiny {
  transition: transform 0.2s;
 }
-/* Making the rail similar to the one on discussions */
- 
-.WikiaRail .rail-module {
-    background-color: transparent;
-    padding: 10px;
-    margin: 0;
-    margin-bottom: 8px;
-}
- 
-.WikiaRail .rail-module h2 {
-    background-image: linear-gradient(to top, rgba(145,145,145,0.15) 43%, transparent 43%, transparent 100%);
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    font-size: 18px;
-    font-weight: 500 !important;
-    letter-spacing: .5px;
-    line-height: 1.5em;
-    padding: 0 3px;
-    text-transform: uppercase;
-    border: none;
-}
+
 /* Mark redirects in Special:Allpages and Special:Watchlist */
 .allpagesredirect {
    font-style: italic;
@@ -837,7 +811,73 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
     display: none;
 }
 /* Hide stuff meant for accounts with special permissions. Made visible again in [[MediaWiki:Group-sysop.css]] */
-.sysop-show,
+.sysop-show
 {
 	display: none;
+}
+
+/* Page indicators */
+.page-header .page-header__indicators.mw-indicators {
+  position: relative;
+  left: 50%;
+  width: fit-content;
+}
+/*Pageindicator Tooltips*/
+.tooltip {
+	position:relative;
+	display:inline-block;
+}
+.tooltip .tooltip-text {
+	visibility:hidden;
+	width:150px;
+	background-color:rgba(112, 112, 112, 0.8);
+	color:#fff;
+	text-align:center;
+	padding:5px 2px;
+	border-radius:5px;
+	/*Something*/
+	position:absolute;
+	z-index:201;
+	top:100%;
+	left:50%;
+	margin-left: -75px;
+}
+.tooltip:hover .tooltip-text {
+	visibility:visible;
+}
+.tooltip .tooltip-text::after {
+	content:" ";
+	position:absolute; 
+	bottom:100%;
+	left:50%;
+	margin-left: -5px;
+	border-width:5px;
+	border-style:solid;
+	border-color:transparent transparent rgba(112, 112, 112, 0.8) transparent;
+}
+.page-content aside.portable-infobox ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Better design for the rail modules */
+.rail-module {
+	background: #fff1;
+	border-right: 5px solid var(--theme-accent-color) !important;
+	padding: 1em;
+	border-radius: 1em 0 0 1em;
+}
+
+.right-rail-toggle {
+  background: transparent;
+}
+
+.page__right-rail,
+.right-rail-wrapper.WikiaRail {
+	background: var(--theme-page-background-color);
+}
+
+.WikiaRail .rail-module h2 {
+	text-transform: uppercase;
+	font-weight: bold !important;
 }
