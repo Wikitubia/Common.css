@@ -12,5 +12,7 @@ jobs:
         - uses: actions/checkout@v3
         - run: echo "Scheduled run each 0:00 UTC"
         - run: echo "Fetching from site..."
-        - run: wget --tries=20 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
-        - run: echo "$GITHUB_WORKSPACE"
+        - run: echo "$GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
+        - run: wget -P /tmp/ -O file.css 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
+        - run: git add /tmp/file.css
+        - run: git commit
