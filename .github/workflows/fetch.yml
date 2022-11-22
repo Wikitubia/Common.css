@@ -1,0 +1,16 @@
+name: Fetch from source
+on:
+  schedule:
+    - cron:  0 0 * * *
+  workflow_dispatch:
+
+jobs:
+  Get-Source:
+      name: Get source
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@latest
+        - run: echo "Scheduled run each 0:00 UTC"
+        - run: echo "Fetching from site..."
+        - run: wget --tries=20 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
+        - run: echo "$GITHUB_WORKSPACE"
