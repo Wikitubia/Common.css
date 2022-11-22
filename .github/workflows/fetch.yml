@@ -9,7 +9,7 @@ jobs:
       name: Get source
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout
+        - uses: actions/checkout@v3
         - run: echo "Scheduled run each 0:00 UTC"
         - run: echo "Fetching from site..."
         - run: wget --tries=20 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
