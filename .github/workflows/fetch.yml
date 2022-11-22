@@ -6,6 +6,8 @@ on:
 
 jobs:
   Get-Source:
+      env: 
+        MESSAGE:
       name: Get source
       runs-on: ubuntu-latest
       steps:
