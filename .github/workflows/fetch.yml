@@ -13,6 +13,6 @@ jobs:
         - run: echo "Scheduled run each 0:00 UTC"
         - run: echo "Fetching from site..."
         - run: echo "$GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
-        - run: wget -P /tmp/ -O file.css 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
-        - run: git add /tmp/file.css
+        - run: wget -P /home/ -O file.css 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
+        - run: git add /home/file.css
         - run: git commit
