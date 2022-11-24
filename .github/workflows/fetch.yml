@@ -7,14 +7,20 @@ on:
 jobs:
   Get-Source:
       env: 
-        MESSAGE:
+        MESSAGE: "Fetch latest revision from URL"
+        URL: 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
       name: Get source
       runs-on: ubuntu-latest
       steps:
+        - name: Set commit data
+          run:  |
+            git config --global user.name 'Markus Mafz'
+            git config --global user.email 'your-username@users.noreply.github.com'
+        - name: Pull data and commit changes
         - uses: actions/checkout@v3
         - run: echo "Scheduled run each 0:00 UTC"
         - run: echo "Fetching from site..."
         - run: echo "$GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
-        - run: wget -P /home/runner/work/Common.css -O Common.css 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
+        - run: wget -P /home/runner/work/Common.css -O Common.css '$URL'
         - run: git add Common.css
-        - run: git commit
+        - run: git commit -m "$MESSAGE"
