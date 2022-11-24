@@ -15,7 +15,7 @@ jobs:
         - name: Set commit data
           run:  |
             git config --global user.name 'Markus Mafz'
-            git config --global user.email 'your-username@users.noreply.github.com'
+            git config --global user.email 'headquarter8302@users.noreply.github.com'
         - name: Pull data and commit changes
         - uses: actions/checkout@v3
         - run: echo "Scheduled run each 0:00 UTC"
