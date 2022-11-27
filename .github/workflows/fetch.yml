@@ -6,16 +6,17 @@ on:
 
 jobs:
   Get-Source:
-      name: Get source
-      runs-on: ubuntu-latest
-      steps:
-          - uses: actions/checkout@v3
-          - run: git config --global user.name 'Markus Mafz'
-          - run: git config --global user.email 'headquarter8302@users.noreply.github.com'
-          - run: echo "Scheduled run each 0:00 UTC"
-          - run: echo "Fetching from site..."
-          - run: echo "$GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
-          - run: wget -P /home/runner/work/Common.css -O Common.css 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
-          - run: git add Common.css
-          - run: git commit -m "Fetch latest revision from URL"
-          - run: git push -u origin main
+    env:
+      FETCH_URL: 'https://youtube.fandom.com/wiki/MediaWiki:Common.css?action=raw'
+    name: Fetch and commit source
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo '[INFO] Setting Git up...' && git config --global user.name 'Actions' && git config --global user.email 'actions@users.noreply.github.com'
+      - run: echo "[INFO] Scheduled run each 0:00 UTC"
+      - run: echo "[INFO] Fetching from site..."
+      - run: echo "[INFO] $GITHUB_WORKSPACE" && cd "$GITHUB_WORKSPACE"
+      - run: wget -P /home/runner/work/Common.css -O Common.css '${{env.FETCH_URL}}'
+      - run: git add Common.css
+      - run: git commit -m 'Fetch latest revision from URL' && git push -u origin main || echo '[INFO] Source is the same as repository. Skipping push...'
+      - run: echo '[EXIT] Job done!' && exit 0
