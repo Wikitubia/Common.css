@@ -36,58 +36,118 @@
    font-style: italic;
 }
 
-a[href$="Purzyckij"],
-a[href$="Cluckster"] {
+/* Dark Mode Username Colors */
+.theme-fandomdesktop-dark a[href$="Purzyckij"],
+.theme-fandomdesktop-dark a[href$="Cluckster"] {
     font-weight: bold !important;
     color: #00ff00 !important;
 }
 
-a[href$="Tylerota2"],
-a[href$="BlindCartographer"], 
-a[href$="JustLeafy"],
-a[href$="Nisk00n"],
-a[href$="Axayla"],
-a[href$="SuperStario89"] {
-font-weight: bold !important;
+.theme-fandomdesktop-dark a[href$="Tylerota2"],
+.theme-fandomdesktop-dark a[href$="BlindCartographer"], 
+.theme-fandomdesktop-dark a[href$="JustLeafy"],
+.theme-fandomdesktop-dark a[href$="Nisk00n"],
+.theme-fandomdesktop-dark a[href$="Axayla"],
+.theme-fandomdesktop-dark a[href$="SuperStario89"] {
+    font-weight: bold !important;
     color: #ff6965 !important;
 }
 
-a[href$="Johncocek3"],
-a[href$="Mebh%20Og%20MacTire"],
-a[href$="Mebh_Og_MacTire"],
-a[href$="ItzWolfyTDM"],
-a[href$="Somebodyidkfkdktd"],
-a[href$="BloodSushi"],
-a[href$="Saurmandal"],
-a[href$="Enayy"] {
+.theme-fandomdesktop-dark a[href$="Johncocek3"],
+.theme-fandomdesktop-dark a[href$="Mebh%20Og%20MacTire"],
+.theme-fandomdesktop-dark a[href$="Mebh_Og_MacTire"],
+.theme-fandomdesktop-dark a[href$="ItzWolfyTDM"],
+.theme-fandomdesktop-dark a[href$="Somebodyidkfkdktd"],
+.theme-fandomdesktop-dark a[href$="BloodSushi"],
+.theme-fandomdesktop-dark a[href$="Saurmandal"],
+.theme-fandomdesktop-dark a[href$="Enayy"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
 
-a[href$="IceCuber36"],
-a[href$="5090061uusd"],
-a[href$="Gen1chiroe"],
-a[href$="Headquarter8302"],
-a[href$="Justarandomperson2"],
-a[href$="Tabbloide"] {
+.theme-fandomdesktop-dark a[href$="IceCuber36"],
+.theme-fandomdesktop-dark a[href$="5090061uusd"],
+.theme-fandomdesktop-dark a[href$="Gen1chiroe"],
+.theme-fandomdesktop-dark a[href$="Headquarter8302"],
+.theme-fandomdesktop-dark a[href$="Justarandomperson2"],
+.theme-fandomdesktop-dark a[href$="Tabbloide"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 
-a[href$="StarGroupPlayz"],
-a[href$="ITurkishmapping"],
-a[href$="OrangeCrewM8"],
-a[href$="Mrfishhhh"] {
+.theme-fandomdesktop-dark a[href$="StarGroupPlayz"],
+.theme-fandomdesktop-dark a[href$="ITurkishmapping"],
+.theme-fandomdesktop-dark a[href$="OrangeCrewM8"],
+.theme-fandomdesktop-dark a[href$="Mrfishhhh"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-a[href$="BlindBotographer"] {
+.theme-fandomdesktop-dark a[href$="BlindBotographer"],
+.theme-fandomdesktop-dark a[href$="SaurBot"] {
     font-weight: bold !important;
 }
 
-a[href$="Lady_Lostris"] {
+.theme-fandomdesktop-dark a[href$="Lady_Lostris"] {
+    font-weight: bold !important;
+    color: #00d6d6 !important;
+}
+
+/* Light Mode Username Colors */
+.theme-fandomdesktop-light a[href$="Purzyckij"],
+.theme-fandomdesktop-light a[href$="Cluckster"] {
+    font-weight: bold !important;
+    color: #00E000 !important;
+}
+
+.theme-fandomdesktop-light a[href$="Tylerota2"],
+.theme-fandomdesktop-light a[href$="BlindCartographer"], 
+.theme-fandomdesktop-light a[href$="JustLeafy"],
+.theme-fandomdesktop-light a[href$="Nisk00n"],
+.theme-fandomdesktop-light a[href$="Axayla"],
+.theme-fandomdesktop-light a[href$="SuperStario89"] {
+    font-weight: bold !important;
+    color: #B80000 !important;
+}
+
+.theme-fandomdesktop-light a[href$="Johncocek3"],
+.theme-fandomdesktop-light a[href$="Mebh%20Og%20MacTire"],
+.theme-fandomdesktop-light a[href$="Mebh_Og_MacTire"],
+.theme-fandomdesktop-light a[href$="ItzWolfyTDM"],
+.theme-fandomdesktop-light a[href$="Somebodyidkfkdktd"],
+.theme-fandomdesktop-light a[href$="BloodSushi"],
+.theme-fandomdesktop-light a[href$="Saurmandal"],
+.theme-fandomdesktop-light a[href$="Enayy"] {
+    color: #323299 !important;
+    font-weight: bold !important;
+}
+
+.theme-fandomdesktop-light a[href$="IceCuber36"],
+.theme-fandomdesktop-light a[href$="5090061uusd"],
+.theme-fandomdesktop-light a[href$="Gen1chiroe"],
+.theme-fandomdesktop-light a[href$="Headquarter8302"],
+.theme-fandomdesktop-light a[href$="Justarandomperson2"],
+.theme-fandomdesktop-light a[href$="Tabbloide"] {
+    font-weight: bold !important;
+    color: #693299 !important;
+}
+
+
+.theme-fandomdesktop-light a[href$="StarGroupPlayz"],
+.theme-fandomdesktop-light a[href$="ITurkishmapping"],
+.theme-fandomdesktop-light a[href$="OrangeCrewM8"],
+.theme-fandomdesktop-light a[href$="Mrfishhhh"] {
+    font-weight: bold !important;
+    color: #c27c0e !important;
+}
+
+.theme-fandomdesktop-light a[href$="BlindBotographer"],
+.theme-fandomdesktop-dark a[href$="SaurBot"] {
+    font-weight: bold !important;
+}
+
+.theme-fandomdesktop-light a[href$="Lady_Lostris"] {
     font-weight: bold !important;
     color: #00d6d6 !important;
 }
