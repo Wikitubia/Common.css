@@ -40,13 +40,13 @@
 
 /* Dark Mode Username Colors */
 .theme-fandomdesktop-dark a[href$="Purzyckij"],
-.theme-fandomdesktop-dark a[href$="Cluckster"] {
+.theme-fandomdesktop-dark a[href$="Cluckster"],
+.theme-fandomdesktop-dark a[href$="JustLeafy"] {
     font-weight: bold !important;
     color: #00ff00 !important;
 }
 
 .theme-fandomdesktop-dark a[href$="BlindCartographer"], 
-.theme-fandomdesktop-dark a[href$="JustLeafy"],
 .theme-fandomdesktop-dark a[href$="Nisk00n"],
 .theme-fandomdesktop-dark a[href$="Axayla"],
 .theme-fandomdesktop-dark a[href$="SuperStario89"] {
@@ -77,8 +77,6 @@
     color: #c98aff !important;
 }
 
-
-.theme-fandomdesktop-dark a[href$="StarGroupPlayz"],
 .theme-fandomdesktop-dark a[href$="ITurkishmapping"],
 .theme-fandomdesktop-dark a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-dark a[href$="Mrfishhhh"] {
@@ -98,13 +96,13 @@
 
 /* Light Mode Username Colors */
 .theme-fandomdesktop-light a[href$="Purzyckij"],
-.theme-fandomdesktop-light a[href$="Cluckster"] {
+.theme-fandomdesktop-light a[href$="Cluckster"],
+.theme-fandomdesktop-light a[href$="JustLeafy"] {
     font-weight: bold !important;
     color: #00E000 !important;
 }
 
 .theme-fandomdesktop-light a[href$="BlindCartographer"], 
-.theme-fandomdesktop-light a[href$="JustLeafy"],
 .theme-fandomdesktop-light a[href$="Nisk00n"],
 .theme-fandomdesktop-light a[href$="Axayla"],
 .theme-fandomdesktop-light a[href$="SuperStario89"] {
@@ -135,8 +133,6 @@
     color: #693299 !important;
 }
 
-
-.theme-fandomdesktop-light a[href$="StarGroupPlayz"],
 .theme-fandomdesktop-light a[href$="ITurkishmapping"],
 .theme-fandomdesktop-light a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-light a[href$="Mrfishhhh"] {
