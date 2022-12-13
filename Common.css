@@ -79,7 +79,8 @@
 
 .theme-fandomdesktop-dark a[href$="ITurkishmapping"],
 .theme-fandomdesktop-dark a[href$="OrangeCrewM8"],
-.theme-fandomdesktop-dark a[href$="Mrfishhhh"] {
+.theme-fandomdesktop-dark a[href$="Mrfishhhh"],
+.theme-fandomdesktop-dark a[href$="Haobo12"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -135,7 +136,8 @@
 
 .theme-fandomdesktop-light a[href$="ITurkishmapping"],
 .theme-fandomdesktop-light a[href$="OrangeCrewM8"],
-.theme-fandomdesktop-light a[href$="Mrfishhhh"] {
+.theme-fandomdesktop-light a[href$="Mrfishhhh"],
+.theme-fandomdesktop-light a[href$="Haobo12"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -877,9 +879,6 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
   filter: invert(1);
 }
 
-.fandom-sticky-header__sitename {
-    display: none;
-}
 /* Hide stuff meant for accounts with special permissions. Made visible again in [[MediaWiki:Group-sysop.css]] */
 .sysop-show
 {
