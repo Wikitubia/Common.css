@@ -950,3 +950,8 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.png"] {
 	text-transform: uppercase;
 	font-weight: bold !important;
 }
+
+/* Theme class styling */
+.theme {
+    background-color: var(--theme-page-background-color--secondary);
+}
