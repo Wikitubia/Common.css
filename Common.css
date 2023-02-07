@@ -71,7 +71,8 @@
 .theme-fandomdesktop-dark a[href$="Headquarter8302"],
 .theme-fandomdesktop-dark a[href$="Justarandomperson2"],
 .theme-fandomdesktop-dark a[href$="Tabbloide"],
-.theme-fandomdesktop-dark a[href$="CoalIsAPro"] {
+.theme-fandomdesktop-dark a[href$="CoalIsAPro"],
+.theme-fandomdesktop-dark a[href$="Gen1chiroe"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -127,7 +128,8 @@
 .theme-fandomdesktop-light a[href$="Headquarter8302"],
 .theme-fandomdesktop-light a[href$="Justarandomperson2"],
 .theme-fandomdesktop-light a[href$="Tabbloide"],
-.theme-fandomdesktop-light a[href$="CoalIsAPro"] {
+.theme-fandomdesktop-light a[href$="CoalIsAPro"],
+.theme-fandomdesktop-light a[href$="Gen1chiroe"] {
     font-weight: bold !important;
     color: #693299 !important;
 }
