@@ -62,7 +62,8 @@
 .theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="Saurmandal"],
 .theme-fandomdesktop-dark a[href$="Enayy"],
-.theme-fandomdesktop-dark a[href$="KeeBlokk"] {
+.theme-fandomdesktop-dark a[href$="KeeBlokk"],
+.theme-fandomdesktop-dark a[href$="Tabbloide"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -70,7 +71,6 @@
 .theme-fandomdesktop-dark a[href$="IceCuber36"],
 .theme-fandomdesktop-dark a[href$="Headquarter8302"],
 .theme-fandomdesktop-dark a[href$="Justarandomperson2"],
-.theme-fandomdesktop-dark a[href$="Tabbloide"],
 .theme-fandomdesktop-dark a[href$="CoalIsAPro"],
 .theme-fandomdesktop-dark a[href$="Gen1chiroe"] {
     font-weight: bold !important;
@@ -80,7 +80,8 @@
 .theme-fandomdesktop-dark a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-dark a[href$="Mrfishhhh"],
 .theme-fandomdesktop-dark a[href$="Haobo12"],
-.theme-fandomdesktop-dark a[href$="TheVlogger110"] {
+.theme-fandomdesktop-dark a[href$="TheVlogger110"],
+.theme-fandomdesktop-dark a[href$="KennyOmega123"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -119,7 +120,8 @@
 .theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="Saurmandal"],
 .theme-fandomdesktop-light a[href$="Enayy"],
-.theme-fandomdesktop-light a[href$="KeeBlokk"] {
+.theme-fandomdesktop-light a[href$="KeeBlokk"],
+.theme-fandomdesktop-light a[href$="Tabbloide"] {
     color: #323299 !important;
     font-weight: bold !important;
 }
@@ -127,7 +129,6 @@
 .theme-fandomdesktop-light a[href$="IceCuber36"],
 .theme-fandomdesktop-light a[href$="Headquarter8302"],
 .theme-fandomdesktop-light a[href$="Justarandomperson2"],
-.theme-fandomdesktop-light a[href$="Tabbloide"],
 .theme-fandomdesktop-light a[href$="CoalIsAPro"],
 .theme-fandomdesktop-light a[href$="Gen1chiroe"] {
     font-weight: bold !important;
@@ -137,7 +138,8 @@
 .theme-fandomdesktop-light a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-light a[href$="Mrfishhhh"],
 .theme-fandomdesktop-light a[href$="Haobo12"],
-.theme-fandomdesktop-light a[href$="TheVlogger110"] {
+.theme-fandomdesktop-light a[href$="TheVlogger110"],
+.theme-fandomdesktop-light a[href$="KennyOmega123"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
