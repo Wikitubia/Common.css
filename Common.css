@@ -62,7 +62,8 @@
 .theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="Saurmandal"],
 .theme-fandomdesktop-dark a[href$="Enayy"],
-.theme-fandomdesktop-dark a[href$="Tabbloide"] {
+.theme-fandomdesktop-dark a[href$="Tabbloide"],
+.theme-fandomdesktop-dark a[href$="Tylerota2"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -120,7 +121,8 @@
 .theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="Saurmandal"],
 .theme-fandomdesktop-light a[href$="Enayy"],
-.theme-fandomdesktop-light a[href$="Tabbloide"] {
+.theme-fandomdesktop-light a[href$="Tabbloide"],
+.theme-fandomdesktop-light a[href$="Tylerota2"] {
     color: #323299 !important;
     font-weight: bold !important;
 }
