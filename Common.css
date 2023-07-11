@@ -13,7 +13,7 @@
 /* Notice of necropost in related threads */
 span.nkch-rdp__header-link-container::after {
   display: block;
-  content: "Please take note of the publish date of these threads, as you might necropost a thread.";
+  content: "Please take note of the publishing dates of the threads listed below as you might necropost a thread.";
 }
 
 /* Fix table of contents */
@@ -975,4 +975,63 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
 /* Theme class styling */
 .theme {
     background-color: var(--theme-page-background-color--secondary);
+}
+/* Discord Widget design*/
+.discord-widget .widget-theme-dark .widget-header {
+	background-color: #ed0000;
+}
+.discord-widget .widget-footer {
+    border-top: 3px ridge #ed0000;
+}
+.discord-widget .widget-body {
+    background-image: url(https://static.wikia.nocookie.net/youtube/images/6/68/Discord_Widget.png);
+    background-position: top;
+    background-size: cover;
+}
+.discord-widget .widget-member-avatar img {
+    border: 2px solid #ed0000;
+    background-color: #ed0000;
+}
+.discord-widget .widget-member .widget-member-name {
+    background-color: #ed0000;
+}
+.discord-widget .widget-btn-connect {
+    color: #fff;
+    background-color: #ed0000;
+    border: 1px solid #ed0000;
+}
+.discord-widget .widget-btn-connect:hover {
+    opacity: 1;
+    background: #ed0000;
+    border: 1px solid #ed0000;
+    text-decoration: none;
+}
+.discord-widget .widget-role-name {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    background: #ed0000 url(https://static.wikia.nocookie.net/youtube/images/2/2e/Discord_Widget_Icon.png) no-repeat right;
+    background-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.discord-widget .widget-body .widget-role-name {
+    color: #ffffff;
+}
+.discord-widget .widget-theme-dark .widget-role-name {
+    color: #fff;
+    background: #ed0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+.discord-widget .widget-body::-webkit-scrollbar {
+	width: 10px;
+}
+.discord-widget .widget-body::-webkit-scrollbar-track { 
+	background: transparent;
+	margin: 3px 0;
+}
+.discord-widget .widget-body::-webkit-scrollbar-thumb {
+	background:#ed0000;
+	border: 3px solid #3a3a3a;
+	border-radius: 10px;
 }
