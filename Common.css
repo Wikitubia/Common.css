@@ -74,14 +74,14 @@ span.nkch-rdp__header-link-container::after {
     font-weight: bold !important;
 }
 
-.theme-fandomdesktop-dark a[href$="IceCuber36"],
 .theme-fandomdesktop-dark a[href$="Headquarter8302"],
 .theme-fandomdesktop-dark a[href$="CoalIsAPro"],
 .theme-fandomdesktop-dark a[href$="Gen1chiroe"],
 .theme-fandomdesktop-dark a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="Vinicini"],
-.theme-fandomdesktop-dark a[href$="AkaManah1"] {
+.theme-fandomdesktop-dark a[href$="AkaManah1"],
+.theme-fandomdesktop-dark a[href$="NoobyLord33"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -137,14 +137,14 @@ span.nkch-rdp__header-link-container::after {
     font-weight: bold !important;
 }
 
-.theme-fandomdesktop-light a[href$="IceCuber36"],
 .theme-fandomdesktop-light a[href$="Headquarter8302"],
 .theme-fandomdesktop-light a[href$="CoalIsAPro"],
 .theme-fandomdesktop-light a[href$="Gen1chiroe"],
 .theme-fandomdesktop-light a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="Vinicini"],
-.theme-fandomdesktop-light a[href$="AkaManah1"] {
+.theme-fandomdesktop-light a[href$="AkaManah1"],
+.theme-fandomdesktop-light a[href$="NoobyLord33"] {
     font-weight: bold !important;
     color: #693299 !important;
 }
