@@ -9,6 +9,7 @@
 @import url('/load.php?debug=false&lang=en&mode=articles&articles=u:dev:MediaWiki:FandomIcons.css|u:dev:MediaWiki:FandomizedActivityFeed.css|u:justleafy:MediaWiki:WDSSpinners/code.css|u:dev:MediaWiki:Button.css|u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles');
 /* Internal imports */
 @import "/load.php?mode=articles&articles=MediaWiki:Themes.css&only=styles";
+@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FontAwesome.css&only=styles";
 
 /* Notice of necropost in related threads */
 span.nkch-rdp__header-link-container::after {
