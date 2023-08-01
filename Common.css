@@ -46,14 +46,14 @@ span.nkch-rdp__header-link-container::after {
 }
 
 /* Dark Mode Username Colors */
-.theme-fandomdesktop-dark a[href$="Purzyckij"],
 .theme-fandomdesktop-dark a[href$="Cluckster"],
-.theme-fandomdesktop-dark a[href$="JustLeafy"] {
+.theme-fandomdesktop-dark a[href$="JustLeafy"],
+.theme-fandomdesktop-dark a[href$="BlindCartographer"] {
     font-weight: bold !important;
     color: #00ff00 !important;
 }
 
-.theme-fandomdesktop-dark a[href$="BlindCartographer"], 
+.theme-fandomdesktop-dark a[href$="Purzyckij"],
 .theme-fandomdesktop-dark a[href$="Axayla"],
 .theme-fandomdesktop-dark a[href$="SuperStario89"],
 .theme-fandomdesktop-dark a[href$="5090061uusd"],
@@ -64,8 +64,6 @@ span.nkch-rdp__header-link-container::after {
 }
 
 .theme-fandomdesktop-dark a[href$="Johncocek3"],
-.theme-fandomdesktop-dark a[href$="Mebh%20Og%20MacTire"],
-.theme-fandomdesktop-dark a[href$="Mebh_Og_MacTire"],
 .theme-fandomdesktop-dark a[href$="ItzWolfyTDM"],
 .theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="Saurmandal"],
@@ -94,7 +92,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="Al%20Timotheus"],
 .theme-fandomdesktop-dark a[href$="Al_Timotheus"],
 .theme-fandomdesktop-dark a[href$="Minecraftia%20Mine%2012312"],
-.theme-fandomdesktop-dark a[href$="Minecraftia_Mine_12312"] {
+.theme-fandomdesktop-dark a[href$="Minecraftia_Mine_12312"],
+.theme-fandomdesktop-dark a[href$="Eterhox"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -128,8 +127,6 @@ span.nkch-rdp__header-link-container::after {
 }
 
 .theme-fandomdesktop-light a[href$="Johncocek3"],
-.theme-fandomdesktop-light a[href$="Mebh%20Og%20MacTire"],
-.theme-fandomdesktop-light a[href$="Mebh_Og_MacTire"],
 .theme-fandomdesktop-light a[href$="ItzWolfyTDM"],
 .theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="Saurmandal"],
@@ -158,8 +155,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="Al%20Timotheus"],
 .theme-fandomdesktop-light a[href$="Al_Timotheus"],
 .theme-fandomdesktop-light a[href$="Minecraftia%20Mine%2012312"],
-.theme-fandomdesktop-light a[href$="Minecraftia_Mine_12312"] {
-
+.theme-fandomdesktop-light a[href$="Minecraftia_Mine_12312"],
+.theme-fandomdesktop-light a[href$="Eterhox"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
