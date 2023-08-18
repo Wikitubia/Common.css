@@ -79,7 +79,6 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="Vinicini"],
-.theme-fandomdesktop-dark a[href$="AkaManah1"],
 .theme-fandomdesktop-dark a[href$="NoobyLord33"],
 .theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"] {
     font-weight: bold !important;
@@ -142,7 +141,6 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="Vinicini"],
-.theme-fandomdesktop-light a[href$="AkaManah1"],
 .theme-fandomdesktop-light a[href$="NoobyLord33"],
 .theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"] {
     font-weight: bold !important;
@@ -1032,4 +1030,104 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
 	background:#ed0000;
 	border: 3px solid #3a3a3a;
 	border-radius: 10px;
+}
+.mbox {
+    --type-important: rgba(200, 0, 0, 0.8);
+    --type-moderate: rgba(233, 124, 47, 0.8);
+    --type-minor: rgba(241, 197, 37, 0.8);
+    display: flex;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d6d6d6;
+    border-left-width: 8px;
+    border-left-color: #d6d6d6;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    min-height: 32px;
+}
+
+.mbox.mbox-type-important {
+    border-left-color: var(--type-important);
+}
+
+.mbox.mbox-type-moderate {
+    border-left-color: var(--type-moderate);
+}
+
+.mbox.mbox-type-minor {
+    border-left-color: var(--type-minor);
+}
+
+.mbox__content {
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 15px;
+}
+
+.mbox__content__image {
+    display: table-cell;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.mbox__content__wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mbox__content__header {
+    display: block;
+    font-weight: bold;
+}
+
+.mbox__content__text {
+    display: block;
+}
+
+.mbox__content__text__comment {
+    font-size: small;
+}
+
+.mbox__content__aside {
+    display: table-cell;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 15px;
+    border-left: 1px solid #d6d6d6;
+}
+
+.mbox__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 7px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #bbb;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.mbox__close:hover {
+    color: #777;
+}
+
+.mbox__close:after {
+    content: '×';
+}
+
+.mw-collapsed + .mbox__close {
+    transform: rotate(45deg);
+    padding: 4px 7px 5px 2px;
+}
+
+/* Ensure text is readable in the FandomDesktop dark theme. */
+.theme-fandomdesktop-dark .mbox {
+    background-color: var(--theme-page-background-color--secondary);
+    border-color: var(--theme-border-color);
 }
