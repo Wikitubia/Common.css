@@ -80,7 +80,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="Vinicini"],
 .theme-fandomdesktop-dark a[href$="NoobyLord33"],
-.theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"] {
+.theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"],
+.theme-fandomdesktop-dark a[href$="CheesePlatter"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -142,7 +143,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="Vinicini"],
 .theme-fandomdesktop-light a[href$="NoobyLord33"],
-.theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"] {
+.theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"],
+.theme-fandomdesktop-light a[href$="CheesePlatter"] {
     font-weight: bold !important;
     color: #693299 !important;
 }
