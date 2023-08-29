@@ -109,14 +109,14 @@ span.nkch-rdp__header-link-container::after {
 }
 
 /* Light Mode Username Colors */
-.theme-fandomdesktop-light a[href$="Purzyckij"],
+.theme-fandomdesktop-light a[href$="BlindCartographer"], 
 .theme-fandomdesktop-light a[href$="Cluckster"],
 .theme-fandomdesktop-light a[href$="JustLeafy"] {
     font-weight: bold !important;
     color: #00E000 !important;
 }
 
-.theme-fandomdesktop-light a[href$="BlindCartographer"], 
+.theme-fandomdesktop-light a[href$="Purzyckij"],
 .theme-fandomdesktop-light a[href$="Axayla"],
 .theme-fandomdesktop-light a[href$="SuperStario89"],
 .theme-fandomdesktop-light a[href$="5090061uusd"],
