@@ -11,6 +11,11 @@
 @import "/load.php?mode=articles&articles=MediaWiki:Themes.css&only=styles";
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:FontAwesome.css&only=styles";
 
+/* Fix contrast */
+.recentImage__details-title {
+  color: var(--theme-body-dynamic-color-1);
+}
+
 /* Notice of necropost in related threads */
 span.nkch-rdp__header-link-container::after {
   display: block;
