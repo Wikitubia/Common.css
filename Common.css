@@ -30,10 +30,10 @@ span.nkch-rdp__header-link-container::after {
 .toc .toctitle h2 .wds-icon + .wds-icon {display: none;}
 
 /* Make icons black in light theme */
-.theme-fandomdesktop-light #yearIcon,
-.theme-fandomdesktop-light #genderIcon,
-.theme-fandomdesktop-light #genreIcon,
-.theme-fandomdesktop-light #subsIcon
+.theme-fandomdesktop-light .yearIcon,
+.theme-fandomdesktop-light .genderIcon,
+.theme-fandomdesktop-light .genreIcon,
+.theme-fandomdesktop-light .subsIcon
 {
     filter: invert(1);
 }
@@ -912,8 +912,9 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
 /* Page indicators */
 .page-header .page-header__indicators.mw-indicators {
   position: relative;
-  left: 50%;
-  width: fit-content;
+  margin-right: 0;
+  margin-left: auto;
+  translate: 20% 0;
 }
 /*Pageindicator Tooltips*/
 .tooltip {
