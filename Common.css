@@ -98,7 +98,9 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="Al_Timotheus"],
 .theme-fandomdesktop-dark a[href$="Minecraftia%20Mine%2012312"],
 .theme-fandomdesktop-dark a[href$="Minecraftia_Mine_12312"],
-.theme-fandomdesktop-dark a[href$="Eterhox"] {
+.theme-fandomdesktop-dark a[href$="Eterhox"],
+.theme-fandomdesktop-dark a[href$="Gummy%20Cow!"],
+.theme-fandomdesktop-dark a[href$="Gummy_Cow!"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -161,7 +163,9 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="Al_Timotheus"],
 .theme-fandomdesktop-light a[href$="Minecraftia%20Mine%2012312"],
 .theme-fandomdesktop-light a[href$="Minecraftia_Mine_12312"],
-.theme-fandomdesktop-light a[href$="Eterhox"] {
+.theme-fandomdesktop-light a[href$="Eterhox"],
+.theme-fandomdesktop-light a[href$="Gummy%20Cow!"],
+.theme-fandomdesktop-light a[href$="Gummy_Cow!"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
