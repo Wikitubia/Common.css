@@ -73,7 +73,9 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="Saurmandal"],
 .theme-fandomdesktop-dark a[href$="Tylerota2"],
-.theme-fandomdesktop-dark a[href$="TheVlogger110"] {
+.theme-fandomdesktop-dark a[href$="TheVlogger110"],
+.theme-fandomdesktop-dark a[href$="Minecraftia%20Mine%2012312"],
+.theme-fandomdesktop-dark a[href$="Minecraftia_Mine_12312"] {
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -92,10 +94,9 @@ span.nkch-rdp__header-link-container::after {
 
 .theme-fandomdesktop-dark a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-dark a[href$="KennyOmega123"],
-.theme-fandomdesktop-dark a[href$="Minecraftia%20Mine%2012312"],
-.theme-fandomdesktop-dark a[href$="Minecraftia_Mine_12312"],
 .theme-fandomdesktop-dark a[href$="Gummy%20Cow!"],
-.theme-fandomdesktop-dark a[href$="Gummy_Cow!"]{
+.theme-fandomdesktop-dark a[href$="Gummy_Cow!"],
+.theme-fandomdesktop-dark a[href$="MrFruitMan1234"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -133,7 +134,9 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="Saurmandal"],
 .theme-fandomdesktop-light a[href$="Tylerota2"],
-.theme-fandomdesktop-light a[href$="TheVlogger110"] {
+.theme-fandomdesktop-light a[href$="TheVlogger110"],
+.theme-fandomdesktop-light a[href$="Minecraftia%20Mine%2012312"],
+.theme-fandomdesktop-light a[href$="Minecraftia_Mine_12312"] {
     color: #323299 !important;
     font-weight: bold !important;
 }
@@ -152,10 +155,9 @@ span.nkch-rdp__header-link-container::after {
 
 .theme-fandomdesktop-light a[href$="OrangeCrewM8"],
 .theme-fandomdesktop-light a[href$="KennyOmega123"],
-.theme-fandomdesktop-light a[href$="Minecraftia%20Mine%2012312"],
-.theme-fandomdesktop-light a[href$="Minecraftia_Mine_12312"],
 .theme-fandomdesktop-light a[href$="Gummy%20Cow!"],
-.theme-fandomdesktop-light a[href$="Gummy_Cow!"] {
+.theme-fandomdesktop-light a[href$="Gummy_Cow!"],
+.theme-fandomdesktop-light a[href$="MrFruitMan1234"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
