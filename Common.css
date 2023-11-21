@@ -96,7 +96,10 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="KennyOmega123"],
 .theme-fandomdesktop-dark a[href$="Gummy%20Cow!"],
 .theme-fandomdesktop-dark a[href$="Gummy_Cow!"],
-.theme-fandomdesktop-dark a[href$="MrFruitMan1234"] {
+.theme-fandomdesktop-dark a[href$="MrFruitMan1234"],
+.theme-fandomdesktop-dark a[href$="Princess%20Joey2022"],
+.theme-fandomdesktop-dark a[href$="Princess_Joey2022"],
+.theme-fandomdesktop-dark a[href$="EldoonNoodle"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -157,7 +160,10 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="KennyOmega123"],
 .theme-fandomdesktop-light a[href$="Gummy%20Cow!"],
 .theme-fandomdesktop-light a[href$="Gummy_Cow!"],
-.theme-fandomdesktop-light a[href$="MrFruitMan1234"] {
+.theme-fandomdesktop-light a[href$="MrFruitMan1234"],
+.theme-fandomdesktop-light a[href$="Princess%20Joey2022"],
+.theme-fandomdesktop-light a[href$="Princess_Joey2022"],
+.theme-fandomdesktop-light a[href$="EldoonNoodle"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
