@@ -51,19 +51,19 @@ span.nkch-rdp__header-link-container::after {
 }
 
 /* Dark Mode Username Colors */
-.theme-fandomdesktop-dark a[href$="Cluckster"],
-.theme-fandomdesktop-dark a[href$="JustLeafy"],
-.theme-fandomdesktop-dark a[href$="BlindCartographer"] {
+.theme-fandomdesktop-dark a[href$="BlindCartographer"],
+.theme-fandomdesktop-dark a[href$="Enayy"] {
     font-weight: bold !important;
     color: #00ff00 !important;
 }
 
 .theme-fandomdesktop-dark a[href$="Purzyckij"],
+.theme-fandomdesktop-dark a[href$="JustLeafy"],
 .theme-fandomdesktop-dark a[href$="Axayla"],
 .theme-fandomdesktop-dark a[href$="SuperStario89"],
 .theme-fandomdesktop-dark a[href$="5090061uusd"],
-.theme-fandomdesktop-dark a[href$="Enayy"],
-.theme-fandomdesktop-dark a[href$="Tabbloide"] {
+.theme-fandomdesktop-dark a[href$="Tabbloide"],
+.theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"] {
     font-weight: bold !important;
     color: #ff6965 !important;
 }
@@ -85,15 +85,12 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="NoobyLord33"],
-.theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"],
 .theme-fandomdesktop-dark a[href$="CheesePlatter"] {
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 .theme-fandomdesktop-dark a[href$="KennyOmega123"],
-.theme-fandomdesktop-dark a[href$="Gummy%20Cow!"],
-.theme-fandomdesktop-dark a[href$="Gummy_Cow!"],
 .theme-fandomdesktop-dark a[href$="MrFruitMan1234"],
 .theme-fandomdesktop-dark a[href$="Princess%20Joey2022"],
 .theme-fandomdesktop-dark a[href$="Princess_Joey2022"],
@@ -114,17 +111,17 @@ span.nkch-rdp__header-link-container::after {
 
 /* Light Mode Username Colors */
 .theme-fandomdesktop-light a[href$="BlindCartographer"], 
-.theme-fandomdesktop-light a[href$="Cluckster"],
-.theme-fandomdesktop-light a[href$="JustLeafy"] {
+.theme-fandomdesktop-light a[href$="Enayy"] {
     font-weight: bold !important;
     color: #00E000 !important;
 }
 
 .theme-fandomdesktop-light a[href$="Purzyckij"],
+.theme-fandomdesktop-light a[href$="JustLeafy"],
 .theme-fandomdesktop-light a[href$="Axayla"],
 .theme-fandomdesktop-light a[href$="SuperStario89"],
 .theme-fandomdesktop-light a[href$="5090061uusd"],
-.theme-fandomdesktop-light a[href$="Enayy"],
+.theme-fandomdesktop-light a[href$="Hellohowareyothisisanalt"],
 .theme-fandomdesktop-light a[href$="Tabbloide"] {
     font-weight: bold !important;
     color: #B80000 !important;
@@ -147,15 +144,12 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="NoobyLord33"],
-.theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"],
 .theme-fandomdesktop-light a[href$="CheesePlatter"] {
     font-weight: bold !important;
     color: #693299 !important;
 }
 
 .theme-fandomdesktop-light a[href$="KennyOmega123"],
-.theme-fandomdesktop-light a[href$="Gummy%20Cow!"],
-.theme-fandomdesktop-light a[href$="Gummy_Cow!"],
 .theme-fandomdesktop-light a[href$="MrFruitMan1234"],
 .theme-fandomdesktop-light a[href$="Princess%20Joey2022"],
 .theme-fandomdesktop-light a[href$="Princess_Joey2022"],
