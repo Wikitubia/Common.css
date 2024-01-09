@@ -33,7 +33,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light .yearIcon,
 .theme-fandomdesktop-light .genderIcon,
 .theme-fandomdesktop-light .genreIcon,
-.theme-fandomdesktop-light .subsIcon
+.theme-fandomdesktop-light .subsIcon,
+.theme-fandomdesktop-light .otherIcon
 {
     filter: invert(1);
 }
