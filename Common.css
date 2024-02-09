@@ -54,7 +54,8 @@ span.nkch-rdp__header-link-container::after {
 
 /* Dark Mode Username Colors */
 .theme-fandomdesktop-dark a[href$="BlindCartographer"],
-.theme-fandomdesktop-dark a[href$="Enayy"] {
+.theme-fandomdesktop-dark a[href$="Enayy"],
+.theme-fandomdesktop-dark a[href$="Tabbloide"] {
     font-weight: bold !important;
     color: #00ff00 !important;
 }
@@ -63,7 +64,6 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="Axayla"],
 .theme-fandomdesktop-dark a[href$="SuperStario89"],
 .theme-fandomdesktop-dark a[href$="5090061uusd"],
-.theme-fandomdesktop-dark a[href$="Tabbloide"],
 .theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"],
 .theme-fandomdesktop-dark a[href$="CheesePlatter"]{
     font-weight: bold !important;
@@ -91,8 +91,7 @@ span.nkch-rdp__header-link-container::after {
 }
 
 .theme-fandomdesktop-dark a[href$="KennyOmega123"],
-.theme-fandomdesktop-dark a[href$="MrFruitMan1234"],
-.theme-fandomdesktop-dark a[href$="EldoonNoodle"] {
+.theme-fandomdesktop-dark a[href$="MrFruitMan1234"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -109,7 +108,8 @@ span.nkch-rdp__header-link-container::after {
 
 /* Light Mode Username Colors */
 .theme-fandomdesktop-light a[href$="BlindCartographer"], 
-.theme-fandomdesktop-light a[href$="Enayy"] {
+.theme-fandomdesktop-light a[href$="Enayy"],
+.theme-fandomdesktop-light a[href$="Tabbloide"] {
     font-weight: bold !important;
     color: #00E000 !important;
 }
@@ -119,7 +119,6 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="SuperStario89"],
 .theme-fandomdesktop-light a[href$="5090061uusd"],
 .theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"],
-.theme-fandomdesktop-light a[href$="Tabbloide"],
 .theme-fandomdesktop-light a[href$="CheesePlatter"]{
     font-weight: bold !important;
     color: #B80000 !important;
@@ -146,8 +145,7 @@ span.nkch-rdp__header-link-container::after {
 }
 
 .theme-fandomdesktop-light a[href$="KennyOmega123"],
-.theme-fandomdesktop-light a[href$="MrFruitMan1234"],
-.theme-fandomdesktop-light a[href$="EldoonNoodle"] {
+.theme-fandomdesktop-light a[href$="MrFruitMan1234"] {
     font-weight: bold !important;
     color: #c27c0e !important;
 }
