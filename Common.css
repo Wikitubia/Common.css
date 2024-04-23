@@ -72,8 +72,9 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="Saurmandal"],
 .theme-fandomdesktop-dark a[href$="TheVlogger110"], 
-.theme-fandomdesktop-dark a[href$="MrFruitMan1234"],
-.theme-fandomdesktop-dark a[href$="CacusCool"]{
+.theme-fandomdesktop-dark a[href$="CacusCool"],
+.theme-fandomdesktop-dark a[href$="EdwardBloxy"]{
+
     color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -94,7 +95,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="Take%20me%20to%20the%20lakes"],
 .theme-fandomdesktop-dark a[href$="FNF_TUNES"],
 .theme-fandomdesktop-dark a[href$="FNF%20TUNES"],
-.theme-fandomdesktop-dark a[href$="EdwardBloxy"]{
+.theme-fandomdesktop-dark a[href$="EveryCafe44"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -129,8 +130,8 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="Saurmandal"],
 .theme-fandomdesktop-light a[href$="TheVlogger110"], 
-.theme-fandomdesktop-light a[href$="MrFruitMan1234"],
-.theme-fandomdesktop-light a[href$="CacusCool"]{
+.theme-fandomdesktop-light a[href$="CacusCool"],
+.theme-fandomdesktop-light a[href$="EdwardBloxy"]{
     color: #323299 !important;
     font-weight: bold !important;
 }
@@ -151,7 +152,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="Take%20me%20to%20the%20lakes"],
 .theme-fandomdesktop-light a[href$="FNF_TUNES"],
 .theme-fandomdesktop-light a[href$="FNF%20TUNES"],
-.theme-fandomdesktop-light a[href$="EdwardBloxy"]{
+.theme-fandomdesktop-light a[href$="EveryCafe44"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
