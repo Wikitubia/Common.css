@@ -85,7 +85,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="Astronomical_Chaos"],
 .theme-fandomdesktop-dark a[href$="Astronomical%20Chaos"],
 .theme-fandomdesktop-dark a[href$="ImmortalWasTaken"],
-.theme-fandomdesktop-dark a[href$="StillSoporific"]{
+.theme-fandomdesktop-dark a[href$="Daunsey"]{
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -96,8 +96,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-dark a[href$="FNF_TUNES"],
 .theme-fandomdesktop-dark a[href$="FNF%20TUNES"],
 .theme-fandomdesktop-dark a[href$="EveryCafe44"], 
-.theme-fandomdesktop-dark a[href$="SussyBitBros"],
-.theme-fandomdesktop-dark a[href$="Daunsey"] {
+.theme-fandomdesktop-dark a[href$="SussyBitBros"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -144,7 +143,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="Astronomical_Chaos"],
 .theme-fandomdesktop-light a[href$="Astronomical%20Chaos"],
 .theme-fandomdesktop-light a[href$="ImmortalWasTaken"],
-.theme-fandomdesktop-light a[href$="StillSoporific"]{
+.theme-fandomdesktop-light a[href$="Daunsey"]{
     font-weight: bold !important;
     color: #693299 !important;
 }
@@ -155,8 +154,7 @@ span.nkch-rdp__header-link-container::after {
 .theme-fandomdesktop-light a[href$="FNF_TUNES"],
 .theme-fandomdesktop-light a[href$="FNF%20TUNES"],
 .theme-fandomdesktop-light a[href$="EveryCafe44"],
-.theme-fandomdesktop-light a[href$="SussyBitBros"],
-.theme-fandomdesktop-light a[href$="Daunsey"] {
+.theme-fandomdesktop-light a[href$="SussyBitBros"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
