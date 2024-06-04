@@ -159,27 +159,27 @@ span.nkch-rdp__header-link-container::after {
     color: #00d6d6 !important;
 }
 
-#mpmodule {
+.mpmodule {
     background: rgba(255, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#mpmodule2 {
+.mpmodule2 {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#mpmodule3 {
+.mpmodule3 {
     background: rgba(255, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 10px;
 }
 
-#mpmodule4 {
+.mpmodule4 {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     margin-bottom: 10px;
@@ -200,7 +200,7 @@ span.nkch-rdp__header-link-container::after {
     clear: none;
 }
 
-#tcenter {
+.tcenter {
     text-align: center;
 }
 
