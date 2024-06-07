@@ -89,8 +89,7 @@ span.nkch-rdp__header-link-container::after {
     color: #c98aff !important;
 }
 
-.theme-fandomdesktop-dark a[href$="FNF_TUNES"],
-.theme-fandomdesktop-dark a[href$="FNF%20TUNES"],
+.theme-fandomdesktop-dark a[href$="Tunesy"],
 .theme-fandomdesktop-dark a[href$="SussyBitBros"]{
     font-weight: bold !important;
     color: #c27c0e !important;
@@ -142,8 +141,8 @@ span.nkch-rdp__header-link-container::after {
     color: #693299 !important;
 }
 
-.theme-fandomdesktop-light a[href$="FNF_TUNES"],
-.theme-fandomdesktop-light a[href$="FNF%20TUNES"],
+
+.theme-fandomdesktop-light a[href$="Tunesy"],
 .theme-fandomdesktop-light a[href$="SussyBitBros"]{
     font-weight: bold !important;
     color: #c27c0e !important;
