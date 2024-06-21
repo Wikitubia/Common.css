@@ -18,7 +18,7 @@
 }
 
 /* Notice of necropost in related threads */
-span.nkch-rdp__header-link-container::after {
+ul.nkch-rdp__list::after {
   display: block;
   content: "Please take note of the publishing dates of the threads listed below as you might necropost a thread.";
 }
