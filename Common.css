@@ -81,7 +81,9 @@ ul.nkch-rdp__list::after {
 .theme-fandomdesktop-dark a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="Astronomical_Chaos"],
-.theme-fandomdesktop-dark a[href$="Astronomical%20Chaos"]{
+.theme-fandomdesktop-dark a[href$="Astronomical%20Chaos"],
+.theme-fandomdesktop-dark a[href$="IceCuber36"]{
+
     font-weight: bold !important;
     color: #c98aff !important;
 }
@@ -130,7 +132,8 @@ ul.nkch-rdp__list::after {
 .theme-fandomdesktop-light a[href$="DanTDM_Fan"],
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="Astronomical_Chaos"],
-.theme-fandomdesktop-light a[href$="Astronomical%20Chaos"]{
+.theme-fandomdesktop-light a[href$="Astronomical%20Chaos"],
+.theme-fandomdesktop-light a[href$="IceCuber36"]{
     font-weight: bold !important;
     color: #693299 !important;
 }
