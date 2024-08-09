@@ -68,7 +68,6 @@ ul.nkch-rdp__list::after {
 }
 
 .theme-fandomdesktop-dark a[href$="Johncocek3"],
-.theme-fandomdesktop-dark a[href$="BloodSushi"],
 .theme-fandomdesktop-dark a[href$="CacusCool"],
 .theme-fandomdesktop-dark a[href$="EdwardBloxy"],
 .theme-fandomdesktop-dark a[href$="Blitzerous"]{
@@ -120,7 +119,6 @@ ul.nkch-rdp__list::after {
 }
 
 .theme-fandomdesktop-light a[href$="Johncocek3"],
-.theme-fandomdesktop-light a[href$="BloodSushi"],
 .theme-fandomdesktop-light a[href$="CacusCool"],
 .theme-fandomdesktop-light a[href$="EdwardBloxy"],
 .theme-fandomdesktop-light a[href$="Blitzerous"]{
@@ -139,7 +137,7 @@ ul.nkch-rdp__list::after {
 }
 
 
-.theme-fandomdesktop-light a[href$="Tunesy"]
+.theme-fandomdesktop-light a[href$="Tunesy"],
 .theme-fandomdesktop-light a[href$="Fandaland"]{
     font-weight: bold !important;
     color: #c27c0e !important;
