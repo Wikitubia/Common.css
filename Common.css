@@ -79,14 +79,16 @@ ul.nkch-rdp__list::after {
 .theme-fandomdesktop-dark a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-dark a[href$="Astronomical_Chaos"],
 .theme-fandomdesktop-dark a[href$="Astronomical%20Chaos"],
-.theme-fandomdesktop-dark a[href$="IceCuber36"]{
+.theme-fandomdesktop-dark a[href$="IceCuber36"],
+.theme-fandomdesktop-dark a[href$="Dragonlord187"]{
 
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 .theme-fandomdesktop-dark a[href$="Tunesy"],
-.theme-fandomdesktop-dark a[href$="Fandaland"]{
+.theme-fandomdesktop-dark a[href$="Fandaland"],
+.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -127,14 +129,16 @@ font-weight: bold !important;
 .theme-fandomdesktop-light a[href$="DanTDM%20Fan"],
 .theme-fandomdesktop-light a[href$="Astronomical_Chaos"],
 .theme-fandomdesktop-light a[href$="Astronomical%20Chaos"],
-.theme-fandomdesktop-light a[href$="IceCuber36"]{
+.theme-fandomdesktop-light a[href$="IceCuber36"],
+.theme-fandomdesktop-light a[href$="Dragonlord187"]{
     font-weight: bold !important;
     color: #693299 !important;
 }
 
 
 .theme-fandomdesktop-light a[href$="Tunesy"],
-.theme-fandomdesktop-light a[href$="Fandaland"]{
+.theme-fandomdesktop-light a[href$="Fandaland"],
+.theme-fandomdesktop-light a[href$="TheOriginalImpostor"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
