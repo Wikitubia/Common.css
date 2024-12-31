@@ -92,7 +92,8 @@ ul.nkch-rdp__list::after {
 }
 
 .theme-fandomdesktop-dark a[href$="BlindBotographer"],
-.theme-fandomdesktop-dark a[href$="SaurBot"] {
+.theme-fandomdesktop-dark a[href$="SaurBot"],
+.theme-fandomdesktop-dark a[href$="TyeBot-lol"] {
     font-weight: bold !important;
 }
 
@@ -140,7 +141,8 @@ font-weight: bold !important;
 }
 
 .theme-fandomdesktop-light a[href$="BlindBotographer"],
-.theme-fandomdesktop-dark a[href$="SaurBot"] {
+.theme-fandomdesktop-dark a[href$="SaurBot"],
+.theme-fandomdesktop-dark a[href$="TyeBot-lol"] {
     font-weight: bold !important;
 }
 
