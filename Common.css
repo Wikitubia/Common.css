@@ -68,23 +68,22 @@ ul.nkch-rdp__list::after {
 
 .theme-fandomdesktop-dark a[href$="Johncocek3"],
 .theme-fandomdesktop-dark a[href$="CacusCool"],
-.theme-fandomdesktop-dark a[href$="EdwardBloxy"]{
-
+.theme-fandomdesktop-dark a[href$="EdwardBloxy"],
+.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"]{
     color: #8b76ff !important;
     font-weight: bold !important;
 }
 
 .theme-fandomdesktop-dark a[href$="IceCuber36"],
-.theme-fandomdesktop-dark a[href$="Dragonlord187"]{
-
+.theme-fandomdesktop-dark a[href$="Dragonlord187"],
+.theme-fandomdesktop-dark a[href$="UnauthorizedPerson"]{
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
 .theme-fandomdesktop-dark a[href$="Headquarter8302"],
 .theme-fandomdesktop-dark a[href$="Tunesy"],
-.theme-fandomdesktop-dark a[href$="Fandaland"],
-.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"]{
+.theme-fandomdesktop-dark a[href$="Fandaland"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -115,21 +114,22 @@ font-weight: bold !important;
 
 .theme-fandomdesktop-light a[href$="Johncocek3"],
 .theme-fandomdesktop-light a[href$="CacusCool"],
-.theme-fandomdesktop-light a[href$="EdwardBloxy"]{
+.theme-fandomdesktop-light a[href$="EdwardBloxy"],
+.theme-fandomdesktop-light a[href$="TheOriginalImpostor"]{
     color: #323299 !important;
     font-weight: bold !important;
 }
 
 .theme-fandomdesktop-light a[href$="IceCuber36"],
-.theme-fandomdesktop-light a[href$="Dragonlord187"]{
+.theme-fandomdesktop-light a[href$="Dragonlord187"],
+.theme-fandomdesktop-light a[href$="UnauthorizedPerson"]{
     font-weight: bold !important;
     color: #693299 !important;
 }
 
 .theme-fandomdesktop-light a[href$="Headquarter8302"],
 .theme-fandomdesktop-light a[href$="Tunesy"],
-.theme-fandomdesktop-light a[href$="Fandaland"],
-.theme-fandomdesktop-light a[href$="TheOriginalImpostor"]{
+.theme-fandomdesktop-light a[href$="Fandaland"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
