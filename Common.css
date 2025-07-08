@@ -3,6 +3,7 @@
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles";
 @import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomIcons.css&only=styles";
 @import "/load.php?mode=articles&articles=MediaWiki:Badges.css&only=styles";
+@import "/load.php?mode=articles&articles=MediaWiki:MainPage.css&only=styles";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
