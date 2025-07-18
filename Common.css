@@ -83,9 +83,8 @@ ul.nkch-rdp__list::after {
     color: #c98aff !important;
 }
 
-.theme-fandomdesktop-dark a[href$="Headquarter8302"],
-.theme-fandomdesktop-dark a[href$="SuperStario89"]{
-    font-weight: bold !important;
+.theme-fandomdesktop-dark a[href$="Headquarter8302"]{
+font-weight: bold !important;
     color: #c27c0e !important;
 }
 
@@ -128,8 +127,7 @@ font-weight: bold !important;
     color: #693299 !important;
 }
 
-.theme-fandomdesktop-light a[href$="Headquarter8302"],
-.theme-fandomdesktop-light a[href$="SuperStario89"]{
+.theme-fandomdesktop-light a[href$="Headquarter8302"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
