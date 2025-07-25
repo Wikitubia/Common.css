@@ -88,7 +88,8 @@ font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-.theme-fandomdesktop-dark a[href$="TyeBot-lol"] {
+.theme-fandomdesktop-dark a[href$="TyeBot-lol"],
+.theme-fandomdesktop-dark a[href$="BlitzOBot"]{
     font-weight: bold !important;
 }
 
@@ -132,8 +133,8 @@ font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-.theme-fandomdesktop-dark a[href$="SaurBot"],
-.theme-fandomdesktop-dark a[href$="TyeBot-lol"] {
+.theme-fandomdesktop-dark a[href$="TyeBot-lol"],
+.theme-fandomdesktop-dark a[href$="BlitzOBot"]{
     font-weight: bold !important;
 }
 
