@@ -78,12 +78,15 @@ ul.nkch-rdp__list::after {
 
 .theme-fandomdesktop-dark a[href$="IceCuber36"],
 .theme-fandomdesktop-dark a[href$="UnauthorizedPerson"],
-.theme-fandomdesktop-dark a[href$="ImmortalQ"]{
+.theme-fandomdesktop-dark a[href$="ImmortalQ"],
+.theme-fandomdesktop-dark a[href$="Someguy0912"]{
     font-weight: bold !important;
     color: #c98aff !important;
 }
 
-.theme-fandomdesktop-dark a[href$="Headquarter8302"]{
+.theme-fandomdesktop-dark a[href$="Headquarter8302"],
+.theme-fandomdesktop-dark a[href$="Luvvqrtz"],
+.theme-fandomdesktop-dark a[href$="Brain180"]{
 font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -123,18 +126,21 @@ font-weight: bold !important;
 
 .theme-fandomdesktop-light a[href$="IceCuber36"],
 .theme-fandomdesktop-light a[href$="UnauthorizedPerson"],
-.theme-fandomdesktop-light a[href$="ImmortalQ"]{
+.theme-fandomdesktop-light a[href$="ImmortalQ"],
+.theme-fandomdesktop-light a[href$="Someguy0912"]{
     font-weight: bold !important;
     color: #693299 !important;
 }
 
-.theme-fandomdesktop-light a[href$="Headquarter8302"]{
+.theme-fandomdesktop-light a[href$="Headquarter8302"],
+.theme-fandomdesktop-light a[href$="Luvvqrtz"],
+.theme-fandomdesktop-light a[href$="Brain180"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
 
-.theme-fandomdesktop-dark a[href$="TyeBot-lol"],
-.theme-fandomdesktop-dark a[href$="BlitzOBot"]{
+.theme-fandomdesktop-light a[href$="TyeBot-lol"],
+.theme-fandomdesktop-light a[href$="BlitzOBot"]{
     font-weight: bold !important;
 }
 
