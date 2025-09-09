@@ -93,6 +93,7 @@ font-weight: bold !important;
 .theme-fandomdesktop-dark a[href$="TyeBot-lol"],
 .theme-fandomdesktop-dark a[href$="BlitzOBot"]{
     font-weight: bold !important;
+    color: #8ad0fe !important;
 }
 
 .theme-fandomdesktop-dark a[href$="Lady_Lostris"] {
@@ -105,7 +106,7 @@ font-weight: bold !important;
 .theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"],
 .theme-fandomdesktop-light a[href$="Blitzerous"]{
 font-weight: bold !important;
-    color: #00E000 !important;
+    color: #008000 !important;
 }
 
 .theme-fandomdesktop-light a[href$="Axayla"],
@@ -140,6 +141,7 @@ font-weight: bold !important;
 .theme-fandomdesktop-light a[href$="TyeBot-lol"],
 .theme-fandomdesktop-light a[href$="BlitzOBot"]{
     font-weight: bold !important;
+    color: #073379 !important;
 }
 
 .theme-fandomdesktop-light a[href$="Lady_Lostris"] {
