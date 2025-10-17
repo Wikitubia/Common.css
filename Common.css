@@ -71,7 +71,8 @@ ul.nkch-rdp__list::after {
 .theme-fandomdesktop-dark a[href$="Johncocek3"],
 .theme-fandomdesktop-dark a[href$="CacusCool"],
 .theme-fandomdesktop-dark a[href$="EdwardBloxy"],
-.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"]{
+.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"],
+.theme-fandomdesktop-dark a[href$="Luvvqrtz"]{
 	color: #8b76ff !important;
     font-weight: bold !important;
 }
@@ -83,8 +84,9 @@ ul.nkch-rdp__list::after {
 }
 
 .theme-fandomdesktop-dark a[href$="Headquarter8302"],
-.theme-fandomdesktop-dark a[href$="Luvvqrtz"],
-.theme-fandomdesktop-dark a[href$="Brain180"]{
+.theme-fandomdesktop-dark a[href$="Brain180"],
+.theme-fandomdesktop-dark a[href$="Wariomoney"],
+.theme-fandomdesktop-dark a[href$="SahrawiArab"]{
 font-weight: bold !important;
     color: #c27c0e !important;
 }
@@ -118,7 +120,8 @@ font-weight: bold !important;
 .theme-fandomdesktop-light a[href$="Johncocek3"],
 .theme-fandomdesktop-light a[href$="CacusCool"],
 .theme-fandomdesktop-light a[href$="EdwardBloxy"],
-.theme-fandomdesktop-light a[href$="TheOriginalImpostor"]{
+.theme-fandomdesktop-light a[href$="TheOriginalImpostor"],
+.theme-fandomdesktop-light a[href$="Luvvqrtz"]{
     color: #323299 !important;
     font-weight: bold !important;
 }
@@ -130,8 +133,9 @@ font-weight: bold !important;
 }
 
 .theme-fandomdesktop-light a[href$="Headquarter8302"],
-.theme-fandomdesktop-light a[href$="Luvvqrtz"],
-.theme-fandomdesktop-light a[href$="Brain180"]{
+.theme-fandomdesktop-light a[href$="Brain180"],
+.theme-fandomdesktop-light a[href$="Wariomoney"],
+.theme-fandomdesktop-light a[href$="SahrawiArab"]{
     font-weight: bold !important;
     color: #c27c0e !important;
 }
