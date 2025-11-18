@@ -77,7 +77,6 @@ ul.nkch-rdp__list::after {
     font-weight: bold !important;
 }
 
-.theme-fandomdesktop-dark a[href$="ImmortalQ"],
 .theme-fandomdesktop-dark a[href$="Someguy0912"]{
     font-weight: bold !important;
     color: #c98aff !important;
@@ -126,7 +125,6 @@ font-weight: bold !important;
     font-weight: bold !important;
 }
 
-.theme-fandomdesktop-light a[href$="ImmortalQ"],
 .theme-fandomdesktop-light a[href$="Someguy0912"]{
     font-weight: bold !important;
     color: #693299 !important;
