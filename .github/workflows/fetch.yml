@@ -12,11 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: set -euo pipefail
       - run: echo '[INFO] Setting Git up...'
       - run: git config --global user.name 'Actions'; git config --global user.email 'actions@github.com'
       - run: echo "[INFO] $GITHUB_WORKSPACE"
       - run: cd "$GITHUB_WORKSPACE"
-      - run: curl '${{env.FETCH_URL}}' | jq -r '.query.pages[0].revisions[0].content' > /home/runner/work/Common.css
+      - run: curl -fsSL '${{env.FETCH_URL}}' | jq -r '.query.pages[0].revisions[0].content' > Common.css
       - run: git add Common.css
       - run: git commit -m 'Fetch latest revision from URL' && git push -u origin main || echo '[INFO] Source is the same as repository. Skipping push...'
       - run: echo '[EXIT] Job done!'; exit 0
