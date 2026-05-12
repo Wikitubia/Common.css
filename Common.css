@@ -1,1005 +1,128 @@
-/***** CSS placed here will be applied to all skins on the entire site. *****/
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:Button.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FandomIcons.css&only=styles";
-@import "/load.php?mode=articles&articles=MediaWiki:Badges.css&only=styles";
-@import "/load.php?mode=articles&articles=MediaWiki:MainPage.css&only=styles";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+	/*======================================
+	#1 IMPORT LINK FROM EXTERNAL STYLESHEETS
+	======================================*/
+@import "/load.php?mode=articles&articles=MediaWiki:Unified.css|u:dev:MediaWiki:FandomIcons.css&only=styles";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-/* Dev imports */
-@import url('/load.php?debug=false&lang=en&mode=articles&articles=u:dev:MediaWiki:FandomIcons.css|u:dev:MediaWiki:FandomizedActivityFeed.css|u:justleafy:MediaWiki:WDSSpinners/code.css|u:dev:MediaWiki:Button.css|u:dev:MediaWiki:FandomizedActivityFeed.css&only=styles');
-/* Internal imports */
-@import "/load.php?mode=articles&articles=MediaWiki:Themes.css&only=styles";
-@import "/load.php?mode=articles&articles=u:dev:MediaWiki:FontAwesome.css&only=styles";
-
-/* Fix contrast */
-.recentImage__details-title {
-  color: var(--theme-body-dynamic-color-1);
+	/*======================================
+	#2 PAGE VIEWING AND DESIGN
+	======================================*/
+/* logo adjustments to the crisp svg files by [[User:Tuxedoshlyukha]] (daler) */
+[data-theme="light"] {
+    --crisp-logo: url('https://static.wikia.nocookie.net/youtube/images/9/9c/Wikitubia_wordmark_black.svg/revision/latest?cb=20220725031349');
 }
 
-/* Notice of necropost in related threads */
-ul.nkch-rdp__list::after {
-  display: block;
-  content: "Please take note of the publishing dates of the threads listed below as you might necropost a thread.";
+[data-theme="dark"] {
+    --crisp-logo: url('https://static.wikia.nocookie.net/youtube/images/9/9b/Wikitubia_wordmark.svg/revision/latest?cb=20220725030712');
 }
 
-/* Fix table of contents */
+[data-test="fandom-community-header-community-logo"] {
+	content: var(--crisp-logo);
+}
+
+/* Font change for page and right hand rail */
+.page__right-rail {
+    font-family: Sans-Serif;
+}
+
+/* Fix table of contents by allowing text to wrap */
 .toctext {
-  overflow-wrap: anywhere;
+	overflow-wrap: anywhere;
 }
 
-.toc .toctitle h2 .wds-icon + .wds-icon {display: none;}
-
-/* Make icons black in light theme */
-.theme-fandomdesktop-light .yearIcon,
-.theme-fandomdesktop-light .genderIcon,
-.theme-fandomdesktop-light .genreIcon,
-.theme-fandomdesktop-light .subsIcon,
-.theme-fandomdesktop-light .otherIcon
-{
-    filter: invert(1);
-}
-
-/* Mark redirects in Special:Allpages and Special:Watchlist */
-.allpagesredirect {
-   font-style: italic;
-}
-.allpagesredirect:after {
-   color: #808080; content: " (redirect)"
-}
-
-.watchlistredir {
-   font-style: italic;
-}
-
-/* Dark Mode Username Colors */
-.theme-fandomdesktop-dark a[href$="Enayy"],
-.theme-fandomdesktop-dark a[href$="Hellohowareyouthisisanalt"],
-.theme-fandomdesktop-dark a[href$="Blitzerous"]{
-    font-weight: bold !important;
-    color: #00ff00 !important;
-}
-
-.theme-fandomdesktop-dark a[href$="Axayla"],
-.theme-fandomdesktop-dark a[href$="Tylerota2"],
-.theme-fandomdesktop-dark a[href$="Fandaland"]{
-    font-weight: bold !important;
-    color: #ff6965 !important;
-}
-
-.theme-fandomdesktop-dark a[href$="Johncocek3"],
-.theme-fandomdesktop-dark a[href$="CacusCool"],
-.theme-fandomdesktop-dark a[href$="EdwardBloxy"],
-.theme-fandomdesktop-dark a[href$="TheOriginalImpostor"],
-.theme-fandomdesktop-dark a[href$="Luvvqrtz"]{
-	color: #8b76ff !important;
-    font-weight: bold !important;
-}
-
-.theme-fandomdesktop-dark a[href$="Someguy0912"]{
-    font-weight: bold !important;
-    color: #c98aff !important;
-}
-
-.theme-fandomdesktop-dark a[href$="Headquarter8302"],
-.theme-fandomdesktop-dark a[href$="Tuxedoshlyukha"]{
-font-weight: bold !important;
-    color: #c27c0e !important;
-}
-
-.theme-fandomdesktop-dark a[href$="TyeBot-lol"],
-.theme-fandomdesktop-dark a[href$="BlitzOBot"],
-.theme-fandomdesktop-dark a[href$="Fandoppel"]{
-    font-weight: bold !important;
-    color: #8ad0fe !important;
-}
-
-/* Light Mode Username Colors */
-.theme-fandomdesktop-light a[href$="Enayy"],
-.theme-fandomdesktop-light a[href$="Hellohowareyouthisisanalt"],
-.theme-fandomdesktop-light a[href$="Blitzerous"]{
-font-weight: bold !important;
-    color: #008000 !important;
-}
-
-.theme-fandomdesktop-light a[href$="Axayla"],
-.theme-fandomdesktop-light a[href$="Tylerota2"],
-.theme-fandomdesktop-light a[href$="Fandaland"]{
-    font-weight: bold !important;
-    color: #B80000 !important;
-}
-
-.theme-fandomdesktop-light a[href$="Johncocek3"],
-.theme-fandomdesktop-light a[href$="CacusCool"],
-.theme-fandomdesktop-light a[href$="EdwardBloxy"],
-.theme-fandomdesktop-light a[href$="TheOriginalImpostor"],
-.theme-fandomdesktop-light a[href$="Luvvqrtz"]{
-    color: #323299 !important;
-    font-weight: bold !important;
-}
-
-.theme-fandomdesktop-light a[href$="Someguy0912"]{
-    font-weight: bold !important;
-    color: #693299 !important;
-}
-
-.theme-fandomdesktop-light a[href$="Headquarter8302"],
-.theme-fandomdesktop-light a[href$="Tuxedoshlyukha"]{
-    font-weight: bold !important;
-    color: #91570B !important;
-}
-
-.theme-fandomdesktop-light a[href$="TyeBot-lol"],
-.theme-fandomdesktop-light a[href$="BlitzOBot"],
-.theme-fandomdesktop-light a[href$="Fandoppel"]{
-    font-weight: bold !important;
-    color: #073379 !important;
-}
-
-.mpmodule {
-    background: rgba(255, 0, 0, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.mpmodule2 {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.mpmodule3 {
-    background: rgba(255, 0, 0, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.mpmodule4 {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.mptext {
-    letter-spacing: 2.5px;
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.references-small {
-    font-size: 90%;
-}
-
-.mw-parser-output .mw-references-wrap {
-    clear: none;
-}
-
-.tcenter {
-    text-align: center;
-}
-
-#mainwiki {
-    position: absolute;
-    top: -65px;
-}
-
-/* make strawpolls long */
-.strawpoll {
-    height: 600px;
-}
-
-.group-wrapper .mw-collapsed span {  
-	float: unset;
-}  
-.group-wrapper .mw-collapsed { 
-	text-align: right;  
-}
-
-.wikia-menu-button.control-button .chevron {
-    border-color: #ffffff transparent transparent transparent !important;
-    display: inline !important;
-    margin: 5px 3px 0 3px;
-}
-
-ul.tabbernav {
-    border-bottom: 0 solid !important;
-    font-size: 14px;
-    font-weight: normal !important;
-}
-
-ul.tabbernav li a {
-    padding: 10px !important;
-    margin-left: 0 !important;
-    color: white !important;
-    border: none !important;
-    background: none !important;
-}
-
-ul.tabbernav li a:link {
-    color: red !important;
-}
-
-ul.tabbernav li a:visited {
-    color: #FFE3EB !important;
-}
-
-ul.tabbernav li a:hover {
-    color: white !important;
-    background: red !important;
-    border: none !important;
-    font-weight: normal !important;
-}
-
-ul.tabbernav li.tabberactive a {
-    background-color: #cc181e !important;
-    border-bottom: none;
-    color: white !important;
-    font-weight: normal !important;
-}
-
-.tabberlive {
-    width: 100% !important;
-}
-
-.tabberlive .tabbertab {
-    border: none !important;
-    padding: 0px !important;
-}
-
-.tabs {
-    border: none;
-    font-weight: bold;
-    border-bottom: 2px solid red;
-    padding-bottom: 2px;
-}
-
-.tabs li a {
-    border: none;
-    border-radius: 0;
-    top: 0;
-}
-
-.tabs li a:hover {
-    text-decoration: none;
-    color: white !important;
-    background-color: red;
-}
-
-.tabs .selected a {
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #cc181e;
-    color: white !important;
+/* Table Of Contents (TOC) Design */
+#toc {
+    background: var(--toc-background);
     border: none;
 }
 
-.tabs .selected a:hover {
-    background-color: #cc181e;
+.theme-fandomdesktop-dark {
+	--toc-background: #1b2d3d;
 }
 
-.WikiaArticle .editsection {
-    text-transform: lowercase;
-    font-weight: normal !important;
+.theme-fandomdesktop-light {
+	--toc-background: #f18282;
 }
 
-.WikiaArticle h3 {
-    font-weight: bold;
-}
-
-.WikiaArticle .thumbinner {
-    background-color: #E6E6FA !important;
-    background-image: none !important;
-}
-
-.WikiaArticleCategories,
-.wikitable {
-    background-image: none !important;
-}
-
-.wikitable,
-table.wikitable {
-    background: none !important;
-}
-
-#toc,
-.toc {
-    background: #1b2d3d;
-    border: none;
-}
-
-.WikiaArticle #pagehistory li.selected {
-    padding: 0 5px;
-    border: none;
-    background-color: rgba(255, 153, 153, 0.5);
-}
-
-.WikiaFooter .toolbar .tools > li > a,
-.WikiaBarWrapper .toolbar .tools > li > a {
-    text-transform: uppercase;
-    font-size: 11px;
-}
-
-.wikia-menu-button .WikiaMenuElement {
-    border: 0 !important;
-    box-shadow: 0 0 !important;
-    top: 22px !important;
-}
-
-#WikiaMainContent,
-#WikiaRail,
-.Wall textarea,
-.category-gallery-item .snippet .text,
-a.wikia-button,
-.wikia-single-button a,
-.wikia-menu-button,
-input,
-.button,
-button,
-select {
-    font-family: 'Roboto', sans-serif !important;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-div.mw-warning-with-logexcerpt {
-    border: 2px solid #ff0000;
-}
-
-.wikia-page-header .header-container {
-    border: 0;
-}
-
-.WikiaArticle fieldset {
-    border: solid 1px #ff0000;
-}
-
-.mw-parser-output .thumbcaption p.title {
-	color: white;
-}
-
-div#wikia-mediawiki-recentchangestext {
-    border: 2px solid #ff0000 !important;
-}
-
-hr {
-    border: 1px red dotted;
-}
-
-.pi-europa .pi-header, .pi-europa .pi-title {
-	background-color: #c7080a;
-    color: #FFFFFF;
-}
-
-.pi-europa .pi-title {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.pi-europa.pi-background {
-    background-color: #1E2D3B;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.pi-europa .pi-navigation {
-    background-color: #960608;
-    color: inherit;
-    font-weight: inherit;
-    text-align: center;
-}
-
-.pi-europa .pi-navigation a {
-    color: white;
-}
-
-.pi-europa .pi-image-collection-tabs {
-    background-color: #1E2D3B;
-    text-align: center;
-}
-
-.pi-europa .pi-image-collection-tabs .current {
-    background-color: #274159;
-    border: #ff0000 1px dashed;
-}
-
-.page-header__eraicons {
-    float: right;
-}
-
-div#icons {
-	margin-top: -21px;
-}
-
-.eraicon.wds-dropdown {
-    margin-inline-start: 3px;
-}
-
-span.eraicon-dropdown {
-    vertical-align: top;
-    background: #403e3e;
-    border-radius: 3px;
-    display: inline-block;
-    margin: 0 auto;
-    color: #fff;
-    min-width: 200px;
-    text-align: center;
-}
-
-.banner-notification.confirm {
-    background: #ff7f7f;
-    border: red;
-    color: black;
-}
-
-.banner-notification.confirm a {
-    color: crimson;
-}
-
-.editpage-sourcewidemode.mode-source .editpage-widemode-trigger .arrow {
-    border-left-color: darkred;
-}
-
-.EditPageToolbar .cke_toolbar_expand > a label {
-    text-transform: uppercase;
-}
-
-.sharedHelp {
-    border: none;
-}
-
-.WikiaFooter section,
-.WikiaBarWrapper section {
-    background-color: transparent;
-    border: none;
-}
-
-.deleteorremove-infobox {
-    border-top: 0;
-}
-
-p.login {
-    font-size: 15px;
-}
-
-.WikiaBarWrapper .wikia-bar .wikiabar-button {
-    background-color: transparent !important;
-    border: none !important;
-}
-
-#WikiaMainContent h1,
-.WikiaPage h2:not(.pi-item),
-.WikiaPage h3:not(.pi-data-label),
-.WikiaPage h4,
-.WikiaPage h5,
-.WikiaPage h6 {
-    border-bottom: 0;
-}
-
-#HOME_TOP_RIGHT_BOXAD {
-    margin-bottom: 20px !important;
-}
-
-.WikiaPage .editsection img {
-    display: none;
-}
-
-.WikiaBarWrapper {
-    background-image: none;
-    box-shadow: none;
-}
-
-.WikiaFooter .toolbar,
-.WikiaBarWrapper .toolbar {
-    background-color: red;
-    background-image: none;
-}
-
+/* Page gallery decoration for individual files */
 .accent {
     border-color: red;
 }
-.oo-ui-popupWidget-popup {
-    width: auto !important;
-}
 
-.discussions-module {
-    text-align: center;
-    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    position: relative;
-}
- 
-.discussions-module-description {
-    white-space: pre-line;
-}
-
-.discussions-button a {
-    background: #ff0000;
-    color: #fff;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    height: 46px;
-    line-height: 46px;
-    margin: 14px 0;
-    padding: 0 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.discussions-button a:hover {
-    background-color: #ff3333;
-    text-decoration: none;
-}
-
-.discussion-module .discussion-threads .discussion-thread {
-    background: rgba(255,0,0,0.1);
-    border: 0;
-}
-
-.discussion-module .discussion-threads .discussion-thread:hover {
-    background: rgba(255,0,0,0.2);
-}
-
-/* sprite edit images */
-.WikiaArticle .editsection img.sprite.edit-pencil {
-    background: url("/extensions/wikia/CommunityPage/images/edit-pen.svg") no-repeat;
-    background-size: 80%;
-    background-position: center;
-}
- 
-.WikiaPageHeader .sprite.edit-pencil {
-    background: url("/extensions/wikia/CommunityPage/images/edit-pen-dark.svg") no-repeat;
-    background-size: 80%;
-    background-position: center;
-}
- 
-.WikiaPageHeader .sprite.lock {
-    height: 16px;
-    width: 16px;
-    background: url("https://images.wikia.nocookie.net/central/images/9/9e/Edit-lock-dark.png") no-repeat;
-    background-size: 80%;
-    background-position: center;
-}
-
-a.tag {
-    color: inherit;
-}
-
-/* Right rail design */
- 
-.rail-module,
-.insights-module,
-.HotSpotsModule,
-.CommunityCornerModule,
-.AchievementsModule,
-.FollowedPagesModule{
-    background-color: clear !important;
-    padding: 9px;
-    border: 2px red !important;
-    border-radius: 5%;
-}
- 
-.photo-module {
-    padding-bottom: 28px !important;
-}
- 
-.photo-module > a {
-    background-color: brown;
-    color: goldenrod;
-    padding: 2px;
-    border: 1.5px solid gold;
-    border-radius: 10% !important;
-}
- 
-/* adds border around elements in siderail */
-
-#SliderView {
-  background: transparent;
-  width: 100%;  
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  text-align: center;
-}
-#SliderWrapper {
-  position: relative;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
-  -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
-  transition-timing-function: cubic-bezier(.67,.01,.23,1);
-}
-#SliderWrapper, #SliderWrapper ul, #SliderWrapper li, #NavBtns, #NavBtns ul {
-  margin: 0px;
-  padding: 0px;
-}
-#NavBtns li {
-  margin: 0px;
-}
- 
-.Sld {
-  height: auto;
-  list-style: none;
-  display: inline;
-  float: left;
-}
- 
-.SlideIMG {
-  width: 100%;
-}
-.SlideIMG img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  min-width: 100%; 
-  min-height: 100%; 
-  position: relative;  
-}
- 
-#NavBtns {
-  position: absolute; 
-  display: block;
-}
-.NavBtn {
-  position: relative;
-  display: block;
-  top: 0px;
-  width: auto;
-  height: auto;
-  list-style: none;
-  margin: 0px;
-  background: transparent;
-}
- 
-.nmLeft {
-  height: 100%;
-  left: 0px;
-  background: linear-gradient(to right, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
-}
-.nmLeft li {
-  list-style: none;   
-  padding: 10px 100px 10px 10px;
-}
-.nmLeft li:hover {
-  cursor: pointer;
-  background: linear-gradient(to right, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
-}
- 
-.nmRight {
-  height: 100%;
-  right: 0px;
-  background: linear-gradient(to left, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
-  text-align: left;
-}
-.nmRight li {
-  list-style: none;   
-  padding: 10px 10px 10px 100px;
-}
-.nmRight li:hover {
-  cursor: pointer;
-  background: linear-gradient(to left, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
-}
- 
-.nmTop {
-  width: 100%;
-  top: 0px;
-  background: linear-gradient(to bottom, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
-  text-align: left;
-}
-.nmTop li {
-  display: inline-block;
-  list-style: none;   
-  padding: 10px 10px 20px 10px;
-}
-.nmTop li:hover {
-  cursor: pointer;
-  background: linear-gradient(to bottom, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
-}
- 
-.nmBottom {
-  width: 100%;
-  bottom: 0px;
-  background: linear-gradient(to top, rgba(61,61,61,0.8), rgba(61,61,61,0.8),  transparent);
-  text-align: left;
-}
-.nmBottom li {
-  display: inline-block;
-  list-style: none;   
-  padding: 20px 10px 10px 10px;
-}
-.nmBottom li:hover {
-  cursor: pointer;
-  background: linear-gradient(to top, rgba(81,81,81,0.8), rgba(81,81,81,0.8),  transparent);
-}
- 
-.nbActiveLeft {
-  background: linear-gradient(to right, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
-}
-.nbActiveRight {
-  background: linear-gradient(to left, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
-}
-.nbActiveTop {
-  background: linear-gradient(to bottom, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
-}
-.nbActiveBottom {
-  background: linear-gradient(to top, rgba(111,111,111,0.8), rgba(111,111,111,0.8),  transparent);
-}
-svg#wds-icons-dropdown-tiny {
- transition: transform 0.2s;
-}
-
-/* Mark redirects in Special:Allpages and Special:Watchlist */
-.allpagesredirect {
-   font-style: italic;
-}
-.allpagesredirect:after {
-   color: #808080; content: " (redirect)"
-}
-.watchlistredir {
-   font-style: italic;
-}
-/* custom notices */
-
-.notice {
-    background-color: #EEE;
-    border-collapse: collapse;
-    border-left: 10px solid #404A57;
-    line-height: 1.5em;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.notice.red {
-    border-left: 10px solid #BA0000;
-}
-.notice.orange {
-    border-left: 10px solid #F28500;
-}
-.notice.yellow {
-    border-left: 10px solid #F4C430;
-}
-.notice.purple {
-    border-left: 10px solid #9932CC;
-}
-.notice.blue {
-    border-left: 10px solid #1E90FF;
-}
-.notice.gray {
-    border-left: 10px solid #BBA;
-}
-.notice .notice__content {
-    display: inline-block;
-    padding: 5px;
-    vertical-align: middle;
-}
-.notice .notice__title {
-    font-size: larger;
-    line-height: normal;
-    margin: 0;
-    margin-bottom: 5px;
-}
-.notice .notice__text {
-    margin: 0;
-    padding: 0.25em 0.5em;
-}
-.wds-community-header__wordmark:hover {
-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-transform: translate3d(0, 0, 0);
-backface-visibility: hidden;
-perspective: 1000px;
-}
- 
-@keyframes shake {
-10%, 90% {
-transform: translate3d(-1px, 0, 0);
-}
- 
-20%, 80% {
-transform: translate3d(2px, 0, 0);
-}
- 
-30%, 50%, 70% {
-transform: translate3d(-4px, 0, 0);
-}
- 
-40%, 60% {
-transform: translate3d(4px, 0, 0);
-}
-}
-.tally span {
-    font-family: rubik;
-}
-.WikiaMainContent pre {
-    background-color: #000000e6;
-}
+/* [[Special:Community]] banner text design for readability */
 .community-page-header-welcome-message,
 .community-page-subheader-welcome-message {
-    text-shadow: 0px 0px 7px #000;
+	text-shadow: 
+		0 0 2px #000, 
+		0 0 2px #000, 
+		0 0 7px #000, 
+		0 0 7px #000;
 }
 
-.theme-fandomdesktop-dark .portable-infobox {
-	--pi-background: rgba(128,0,0,0.7) !important;
+	/*======================================
+	#3 PORTABLE INFOBOX
+	======================================*/
+/* both light and dark mode */
+:is([data-theme="light"], [data-theme="dark"]) .portable-infobox {
+    --pi-secondary-background--label: #FFF;
+    --pi-border-color: red
 }
 
-.theme-fandomdesktop-light #toc, .theme-fandomdesktop-light .toc {
-	background: #f18282;
+[data-theme="light"] .portable-infobox {
+    --pi-secondary-background: #FF3131;
+    --pi-background: rgba(255, 127, 127, .65);
 }
 
-.wds-tabs__tab:hover {
-    cursor: pointer;
+[data-theme="dark"] .portable-infobox {
+	--pi-background: rgba(128, 0, 0, .7);
+	--pi-secondary-background: #CF0101;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
+/* infobox decoration */
+.page .portable-infobox {
+    border-radius: .3em;
+	overflow: hidden;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
+/* caption readability */
+.pi-caption {
+	color: var(--theme-body-text-color);
+	font-size: 90%;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #8B0000;
+/* infobox padding */
+.portable-infobox .pi-data {
+    margin: .2em .8em;
+    padding: .5em 0;
 }
 
-body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
-  filter: invert(1);
+/* if unorganized list (ul) is used in an infobox parameter */
+.page-content .portable-infobox ul {
+	margin: 0;
 }
 
-/* Hide stuff meant for accounts with special permissions. Made visible again in [[MediaWiki:Group-sysop.css]] */
-.sysop-show
-{
-	display: none;
+/* the [source] at the bottom of the infobox */
+.pi-navigation {
+    text-align: center;
+    border-top: 0;
+    background: var(--pi-secondary-background);
 }
 
-/* Page indicators */
-.page-header .page-header__indicators.mw-indicators {
-  position: relative;
-  margin-right: 0;
-  margin-left: auto;
-}
-/*Pageindicator Tooltips*/
-.tooltip {
-	position:relative;
-	display:inline-block;
-}
-.tooltip .tooltip-text {
-	visibility:hidden;
-	width:150px;
-	background-color:rgba(112, 112, 112, 0.8);
-	color:#fff;
-	text-align:center;
-	padding:5px 2px;
-	border-radius:5px;
-	/*Something*/
-	position:absolute;
-	z-index:201;
-	top:100%;
-	left:50%;
-	margin-left: -75px;
-}
-.tooltip:hover .tooltip-text {
-	visibility:visible;
-}
-.tooltip .tooltip-text::after {
-	content:" ";
-	position:absolute; 
-	bottom:100%;
-	left:50%;
-	margin-left: -5px;
-	border-width:5px;
-	border-style:solid;
-	border-color:transparent transparent rgba(112, 112, 112, 0.8) transparent;
-}
-.page-content aside.portable-infobox ul {
-    margin: 0;
+.pi-navigation :is(small, a) {
+    color: white;
 }
 
-/* Better design for the rail modules */
-.rail-module {
-	background: #fff1;
-	border-right: 5px solid var(--theme-accent-color) !important;
-	padding: 1em;
-	border-radius: 1em 0 0 1em;
-}
-
-.right-rail-toggle {
-  background: transparent;
-}
-
-.page__right-rail,
-.right-rail-wrapper.WikiaRail {
-	background: var(--theme-page-background-color);
-}
-
-.WikiaRail .rail-module h2 {
-	text-transform: uppercase;
-	font-weight: bold !important;
-}
-
-/* Theme class styling */
-.theme {
-    background-color: var(--theme-page-background-color--secondary);
-}
-/* Discord Widget design*/
-.discord-widget .widget-theme-dark .widget-header {
-	background-color: #ed0000;
-}
-.discord-widget .widget-footer {
-    border-top: 3px ridge #ed0000;
-}
-.discord-widget .widget-body {
-    background-image: url(https://static.wikia.nocookie.net/youtube/images/6/68/Discord_Widget.png);
-    background-position: top;
-    background-size: cover;
-}
-.discord-widget .widget-member-avatar img {
-    border: 2px solid #ed0000;
-    background-color: #ed0000;
-}
-.discord-widget .widget-member .widget-member-name {
-    background-color: #ed0000;
-}
-.discord-widget .widget-btn-connect {
-    color: #fff;
-    background-color: #ed0000;
-    border: 1px solid #ed0000;
-}
-.discord-widget .widget-btn-connect:hover {
-    opacity: 1;
-    background: #ed0000;
-    border: 1px solid #ed0000;
-    text-decoration: none;
-}
-.discord-widget .widget-role-name {
-    color: #fff;
-    text-shadow: 0 0 5px #fff;
-    background: #ed0000 url(https://static.wikia.nocookie.net/youtube/images/2/2e/Discord_Widget_Icon.png) no-repeat right;
-    background-size: 20px;
-    padding: 5px;
-    border-radius: 5px;
-}
-.discord-widget .widget-body .widget-role-name {
-    color: #ffffff;
-}
-.discord-widget .widget-theme-dark .widget-role-name {
-    color: #fff;
-    background: #ed0000;
-    padding: 5px;
-    border-radius: 5px;
-}
-.discord-widget .widget-body::-webkit-scrollbar {
-	width: 10px;
-}
-.discord-widget .widget-body::-webkit-scrollbar-track { 
-	background: transparent;
-	margin: 3px 0;
-}
-.discord-widget .widget-body::-webkit-scrollbar-thumb {
-	background:#ed0000;
-	border: 3px solid #3a3a3a;
-	border-radius: 10px;
-}
+	/*======================================
+	#4 TEMPLATES
+	======================================*/
+/* messageboxes */
 .mbox {
-    --type-important: rgba(200, 0, 0, 0.8);
-    --type-moderate: rgba(233, 124, 47, 0.8);
-    --type-minor: rgba(241, 197, 37, 0.8);
+    --type-important: rgba(200, 0, 0, .8);
+    --type-moderate: rgba(233, 124, 47, .8);
+    --type-minor: rgba(241, 197, 37, .8);
     display: flex;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, .7);
     border: 1px solid #d6d6d6;
     border-left-width: 8px;
     border-left-color: #d6d6d6;
@@ -1056,7 +179,7 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
 
 .mbox__content__aside {
     display: table-cell;
-    width: 100px;
+    width: 100;
     vertical-align: middle;
     text-align: center;
     padding-left: 15px;
@@ -1092,4 +215,514 @@ body.theme-fandomdesktop-light img[data-image-name="HomepageWelcome.svg"] {
 .theme-fandomdesktop-dark .mbox {
     background-color: var(--theme-page-background-color--secondary);
     border-color: var(--theme-border-color);
+}
+
+/* Icons template at the top of the page */
+.page-header .page-header__indicators.mw-indicators {
+  margin-left: auto;
+}
+
+/* Discord Widget design*/
+.discord-widget .widget-theme-dark .widget-header {
+	background-color: #ed0000;
+}
+
+.discord-widget .widget-footer {
+    border-top: 3px ridge #ed0000;
+}
+
+.discord-widget .widget-body {
+    background-image: url(https://static.wikia.nocookie.net/youtube/images/6/68/Discord_Widget.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.discord-widget .widget-member-avatar img {
+    border: 2px solid #ed0000;
+    background-color: #ed0000;
+}
+
+.discord-widget .widget-member .widget-member-name {
+    background-color: #ed0000;
+}
+
+.discord-widget .widget-btn-connect {
+    color: #fff;
+    background-color: #ed0000;
+    border: 1px solid #ed0000;
+}
+
+.discord-widget .widget-btn-connect:hover {
+    opacity: 1;
+    background: #ed0000;
+    border: 1px solid #ed0000;
+    text-decoration: none;
+}
+
+.discord-widget .widget-role-name {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    background: #ed0000 url(https://static.wikia.nocookie.net/youtube/images/2/2e/Discord_Widget_Icon.png) no-repeat right;
+    background-size: 20;
+    padding: .45em;
+    border-radius: 5px;
+}
+
+.discord-widget .widget-body .widget-role-name {
+    color: #fff;
+}
+
+.discord-widget .widget-theme-dark .widget-role-name {
+    color: #fff;
+    background: #ed0000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.discord-widget .widget-body::-webkit-scrollbar {
+	width: 10;
+}
+
+.discord-widget .widget-body::-webkit-scrollbar-track { 
+	background: transparent;
+	margin: 3px 0;
+}
+
+.discord-widget .widget-body::-webkit-scrollbar-thumb {
+	background:#ed0000;
+	border: 3px solid #3a3a3a;
+	border-radius: 10px;
+}
+
+	/*======================================
+	#5 MISCELLANEOUS
+	======================================*/
+/* Make icons black in light theme */
+.theme-fandomdesktop-light :is(.yearIcon, .genderIcon, .genreIcon, .subsIcon, .otherIcon) {
+    filter: invert(1);
+}
+
+/* Mark redirects in Special:Allpages and Special:Watchlist */
+.allpagesredirect, .watchlistredir {
+   font-style: italic;
+}
+
+.allpagesredirect:after {
+   color: rgb(12 12 12 / 60%); 
+   content: " (redirect)";
+}
+
+/* Adjust base styles for Recent Wiki Activity rail module for usernames with badges*/
+.edit-info-user::after {
+    margin-left: 0;
+	width: 1em;
+    height: 1em;
+    transform: translate(0, -1px);
+}
+
+/* Better design for the rail modules */
+.rail-module {
+	background: #fff1;
+	border-right: thick solid var(--theme-accent-color) !important;
+	border-radius: 1em 0 0 1em;
+}
+
+/* remove/include right hand rail button */
+.right-rail-toggle {
+  background: transparent;
+}
+
+.page__right-rail {
+	background: var(--theme-page-background-color);
+}
+
+/* rail module h2 header */
+.WikiaRail .rail-module h2 {
+	text-transform: uppercase;
+}
+
+/* Wikia toolbar decoration */
+.WikiaBarWrapper .toolbar .tools > li > a {
+    text-transform: uppercase;
+    font-size: .92em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: .8em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8B0000;
+}
+
+	/*======================================
+	#8 MAIN PAGE DESIGN
+	======================================*/
+.mpmodule2 {
+    background: rgba(255, 255, 255, .1);
+    padding: 10;
+    margin-bottom: 10;
+    text-align: center;
+}
+
+.mptext {
+    letter-spacing: .2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* swap logo color on light mode by [[User:Tuxedoshlyukha]] (daler) */
+.mpwt-hero-image [data-src*="Wikitubia_wordmark.svg"] {
+    content: var(--crisp-logo);
+}
+
+/* Code made by [[User:Headquarters8302]] (Markus) */
+:root {
+	--mpwt-hero-bg-light: color-mix(in oklch, #ff0000, var(--theme-page-dynamic-color-1--inverted) 75%);
+	--mpwt-hero-bg-dark: color-mix(in oklch, #ff0000, var(--theme-page-dynamic-color-1--inverted));
+	--mpwt-bg-neutral: #0f0f0f;
+	--mpwt-bg-light: white;
+	--mpwt-highlight-dark: #272727;
+	--mpwt-highlight-light: #f2f2f2;
+	--mpwt-neutral-border: rgba(127,127,127,.3); /*border color changed to appear on light mode by [[User:Tuxedoshlyukha]] (daler) */
+	--mpwt-mastodon-bg-light: #ffffff;
+	--mpwt-mastodon-bg-dark: #181821;
+}
+
+.theme-fandomdesktop-light {
+	--mpwt-hero-bg: var(--mpwt-hero-bg-light);
+	--mpwt-bg-neutral: var(--mpwt-bg-light);
+	--mpwt-highlight: var(--mpwt-highlight-light);
+	--mpwt-mastodon-bg: var(--mpwt-mastodon-bg-light);
+}
+
+.theme-fandomdesktop-dark {
+	--mpwt-hero-bg: var(--mpwt-hero-bg-dark);
+	--mpwt-highlight: var(--mpwt-highlight-dark);
+	--mpwt-mastodon-bg: var(--mpwt-mastodon-bg-dark);
+}
+
+.mpwt-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-inline: 1em;
+}
+
+.mpwt-two-col {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+
+.mpwt-module h2 {
+	font-size: 250%;
+}
+
+.mpwt-module .mpwt-island {
+	border-radius: 12px;
+	padding: 1em;
+}
+
+.theme-fandomdesktop-dark :is(.mpwt-module, a.widget-btn-connect,
+.DiscordWidget .widget-header .widget-header-count, .mpwt-socials [role="article"].rss_item) {
+	color: white;
+}
+
+.theme-fandomdesktop-light :is(.mpwt-module, a.widget-btn-connect, 
+.DiscordWidget .widget-header .widget-header-count, .mpwt-socials [role="article"].rss_item) {
+	color: black;
+}
+
+.theme-fandomdesktop-light :is(.DiscordWidget .widget-header > .widget-logo, .mpwt-about-image img) {
+    filter: invert(1);
+}
+
+.mpwt-red-wave-bg {
+	background:
+		url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiNmZjAwMDAiIGZpbGwtb3BhY2l0eT0iMC4yNSIgZD0iTTAsMTI4TDIxLjgsMTIyLjdDNDMuNiwxMTcsODcsMTA3LDEzMSw4NS4zQzE3NC41LDY0LDIxOCwzMiwyNjIsMzJDMzA1LjUsMzIsMzQ5LDY0LDM5MywxMDYuN0M0MzYuNCwxNDksNDgwLDIwMyw1MjQsMTk3LjNDNTY3LjMsMTkyLDYxMSwxMjgsNjU1LDExMkM2OTguMiw5Niw3NDIsMTI4LDc4NSwxNjUuM0M4MjkuMSwyMDMsODczLDI0NSw5MTYsMjUwLjdDOTYwLDI1NiwxMDA0LDIyNCwxMDQ3LDIyNEMxMDkwLjksMjI0LDExMzUsMjU2LDExNzgsMjQwQzEyMjEuOCwyMjQsMTI2NSwxNjAsMTMwOSwxMzguN0MxMzUyLjcsMTE3LDEzOTYsMTM5LDE0MTgsMTQ5LjNMMTQ0MCwxNjBMMTQ0MCwzMjBMMTQxOC4yLDMyMEMxMzk2LjQsMzIwLDEzNTMsMzIwLDEzMDksMzIwQzEyNjUuNSwzMjAsMTIyMiwzMjAsMTE3OCwzMjBDMTEzNC41LDMyMCwxMDkxLDMyMCwxMDQ3LDMyMEMxMDAzLjYsMzIwLDk2MCwzMjAsOTE2LDMyMEM4NzIuNywzMjAsODI5LDMyMCw3ODUsMzIwQzc0MS44LDMyMCw2OTgsMzIwLDY1NSwzMjBDNjEwLjksMzIwLDU2NywzMjAsNTI0LDMyMEM0ODAsMzIwLDQzNiwzMjAsMzkzLDMyMEMzNDkuMSwzMjAsMzA1LDMyMCwyNjIsMzIwQzIxOC4yLDMyMCwxNzUsMzIwLDEzMSwzMjBDODcuMywzMjAsNDQsMzIwLDIyLDMyMEwwLDMyMFoiPjwvcGF0aD48L3N2Zz4="),
+		var(--mpwt-hero-bg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.mpwt-hero {
+	/*background-color: color-mix(in oklch, #ff0000, black);*/
+	height: max-content;
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr 1fr;
+	align-items: stretch;
+}
+
+.mpwt-module:nth-child(1) {
+  container: hero / inline-size;
+}
+
+@container hero (width <= 900px) {
+  .mpwt-module .mpwt-hero {
+    grid-template-columns: 1fr;
+  }
+  
+  .mpwt-title {
+  	overflow-y: clip;
+  }
+}
+
+.mpwt-container:nth-child(1) {
+	container: main-container / inline-size;
+}
+
+@container main-container (width <= 900px) {
+  .mpwt-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mpwt-title-container {
+	display: grid;
+	grid-template-rows: 1fr .5fr .1fr;
+}
+
+.mpwt-link-container {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: min-content;
+	justify-content: center;
+	gap: 1vw;
+}
+
+.mpwt-link-container .mpwt-icon {
+	color: var(--theme-page-dynamic-color-1);
+	font-size: 2.5vw;
+}
+
+.mpwt-info-container ul.mpwt-info-list {
+	margin: 0;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+}
+
+.mpwt-info-emphasis {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.mpwt-module h2 {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.page-content .mpwt-title {
+	font-size: 3em;
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.mpwt-intro,
+.mpwt-about,
+.mpwt-community,
+.mpwt-privacy,
+.mpwt-helping,
+.mpwt-staff,
+.mpwt-socials,
+.mpwt-hoflist {
+	background-color: var(--mpwt-bg-neutral);
+	border: .1vw solid var(--mpwt-neutral-border);
+}
+
+.mpwt-intro .mpwt-intro-heading,
+.mpwt-about .mpwt-about-heading,
+.mpwt-featured .mpwt-featured-heading,
+.mpwt-hof .mpwt-hof-heading,
+.mpwt-helping .mpwt-helping-heading,
+.mpwt-staff .mpwt-staff-heading,
+.mpwt-hoflist .mpwt-hoflist-heading {
+	margin-block-end: .5em;
+}
+
+.mpwt-about-heading .mw-headline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mpwt-about.mpwt-island {
+	height: 100%;
+}
+
+.mpwt-community-heading, .mpwt-privacy-heading, .mpwt-helping-heading, .mpwt-staff-heading, .mpwt-socials-heading, .mpwt-hoflist-heading {
+	text-align: center;
+}
+
+.mpwt-community .mpwt-icon {
+	font-size: 5em;
+	color: var(--theme-page-dynamic-color-1);
+}
+
+.mpwt-community .mpwt-island {
+	color: var(--theme-page-dynamic-color-1);
+}
+
+.mpwt-module .mpwt-container.mpwt-two-col {
+	justify-items: center;
+	margin-block: 1em;
+}
+
+.mpwt-community .mpwt-island {
+	background-color: var(--mpwt-hero-bg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1em;
+	width: 75%;
+}
+
+.mpwt-privacy-maintext {
+	background-color: var(--mpwt-highlight);
+	text-align: center;
+	margin: 1em;
+}
+
+.mpwt-privacy-expand-text {
+	font-weight: bold;
+}
+
+.mpwt-red-border {
+	border: 1px solid var(--mpwt-hero-bg);
+}
+
+.mpwt-featured {
+	background-color: var(--mpwt-bg-neutral);
+}
+
+.mpwt-hof {
+	background: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23ff0000' fill-opacity='.1' fill-rule='evenodd'/%3E%3C/svg%3E"), var(--mpwt-bg-neutral);
+	border: 1px solid yellow;
+}
+
+.mpwt-featured-grid, .mpwt-hof-grid {
+	display: grid;
+	grid-template-rows: 1fr .1fr .5fr;
+	justify-items: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.mpwt-featured-image img, .mpwt-hof-image img, .mpwt-hoflist-image img {
+	border-radius: 12px;
+}
+
+.mpwt-featured-link-container, .mpwt-hof-link-container {
+	width: 100%;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	gap: .5em
+}
+
+.mpwt-helping .mpwt-two-col > div {
+	width: 100%;
+}
+
+.mpwt-container .DiscordWidget {
+	.widget {
+		border-radius: 12px;
+	}
+	
+	.title-container,
+	.widget-role-name {
+		display: none;
+	}
+	
+	.new-branding .widget-header {
+		background:
+		url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMTQ0MCAzMjAiPjxwYXRoIGZpbGw9IiNmZjAwMDAiIGZpbGwtb3BhY2l0eT0iMC4yNSIgZD0iTTAsMTI4TDIxLjgsMTIyLjdDNDMuNiwxMTcsODcsMTA3LDEzMSw4NS4zQzE3NC41LDY0LDIxOCwzMiwyNjIsMzJDMzA1LjUsMzIsMzQ5LDY0LDM5MywxMDYuN0M0MzYuNCwxNDksNDgwLDIwMyw1MjQsMTk3LjNDNTY3LjMsMTkyLDYxMSwxMjgsNjU1LDExMkM2OTguMiw5Niw3NDIsMTI4LDc4NSwxNjUuM0M4MjkuMSwyMDMsODczLDI0NSw5MTYsMjUwLjdDOTYwLDI1NiwxMDA0LDIyNCwxMDQ3LDIyNEMxMDkwLjksMjI0LDExMzUsMjU2LDExNzgsMjQwQzEyMjEuOCwyMjQsMTI2NSwxNjAsMTMwOSwxMzguN0MxMzUyLjcsMTE3LDEzOTYsMTM5LDE0MTgsMTQ5LjNMMTQ0MCwxNjBMMTQ0MCwzMjBMMTQxOC4yLDMyMEMxMzk2LjQsMzIwLDEzNTMsMzIwLDEzMDksMzIwQzEyNjUuNSwzMjAsMTIyMiwzMjAsMTE3OCwzMjBDMTEzNC41LDMyMCwxMDkxLDMyMCwxMDQ3LDMyMEMxMDAzLjYsMzIwLDk2MCwzMjAsOTE2LDMyMEM4NzIuNywzMjAsODI5LDMyMCw3ODUsMzIwQzc0MS44LDMyMCw2OTgsMzIwLDY1NSwzMjBDNjEwLjksMzIwLDU2NywzMjAsNTI0LDMyMEM0ODAsMzIwLDQzNiwzMjAsMzkzLDMyMEMzNDkuMSwzMjAsMzA1LDMyMCwyNjIsMzIwQzIxOC4yLDMyMCwxNzUsMzIwLDEzMSwzMjBDODcuMywzMjAsNDQsMzIwLDIyLDMyMEwwLDMyMFoiPjwvcGF0aD48L3N2Zz4="),
+		var(--mpwt-hero-bg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 175%;
+	}
+	
+	.widget-body, .widget-footer {
+		background-color: var(--mpwt-bg-neutral);
+	}
+	
+	.widget-footer {
+		position: relative; /* This is a bug that went unfixed for years */
+		box-shadow: 0 0 50px 0px rgba(0 0 0 / .25);
+		
+		.widget-btn-connect {
+			background-color: var(--mpwt-highlight);
+			border-radius: 100vw;
+			border: 0;
+			margin: .5em auto;
+		}
+	}
+}
+
+.mpwt-staff .mpwt-staff-heading {
+	font-size: 1.75em;
+}
+
+.mpwt-staff-list-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.mpwt-staff-list-container > div:not(:last-child) {
+	border-block-end: 1px solid var(--mpwt-neutral-border);
+}
+
+.mpwt-staff-list-container ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+.mpwt-staff-list-container ul > li {
+	margin-block: .5em;
+}
+
+.mpwt-socials .wds-tab__content.wds-is-current {
+	max-height: 25vh;
+	overflow-y: auto;
+}
+
+.mpwt-socials .wds-tab__content.wds-is-current > div {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.mpwt-socials [role="article"].rss_item {
+	background-color: var(--mpwt-mastodon-bg);
+	padding: 1em;
+}
+
+.mpwt-hoflist-display {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: calc(1vw*.75);
+	max-height: calc(125px*1.5);
+	overflow: hidden;
+	overflow-y: auto;
 }
