@@ -20,6 +20,11 @@
 	content: var(--crisp-logo);
 }
 
+/* if pages wanna use the logo */
+.logo-swap {
+	content: var(--crisp-logo);
+}
+
 /* Font change for page and right hand rail */
 .page__right-rail {
     font-family: Sans-Serif;
@@ -292,6 +297,30 @@
 	background:#ed0000;
 	border: 3px solid #3a3a3a;
 	border-radius: 10px;
+}
+
+/* rail module button to discussions */
+#discussions-button {
+	text-align: center;
+}
+
+.discussions-button a {
+    background: #ff0000;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 46px;
+    line-height: 46px;
+    margin: 14px 0;
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.discussions-button a:hover {
+    background-color: #ff3333;
+    text-decoration: none;
 }
 
 	/*======================================
