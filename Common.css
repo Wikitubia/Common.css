@@ -299,6 +299,11 @@
 	border-radius: 10px;
 }
 
+/* requested by markus */
+.rail-module.discord-module {
+    padding-block: 1rem;
+}
+
 /* rail module button to discussions */
 #discussions-button {
 	text-align: center;
@@ -352,8 +357,17 @@
 /* Better design for the rail modules */
 .rail-module {
 	background: #fff1;
-	border-right: thick solid var(--theme-accent-color) !important;
-	border-radius: 1em 0 0 1em;
+	border-right: thick solid var(--theme-accent-color);
+	border-radius: 1em 0 0 0;
+}
+
+.discord-module {
+	border-right: none;
+}
+
+/* quick fix to rail module thanks to our glorious leader markus*/
+.rail-module:not(.discord-module) {
+    padding: 1rem;
 }
 
 /* remove/include right hand rail button */
