@@ -228,85 +228,86 @@
 }
 
 /* Discord Widget design*/
-.discord-widget .widget-theme-dark .widget-header {
-	background-color: #ed0000;
+:root {
+	--dc-wg: #ed0000;
 }
 
-.discord-widget .widget-footer {
-    border-top: 3px ridge #ed0000;
-}
+.discord-widget {
+	.widget-theme-dark .widget-header {
+		background-color: var(--dc-wg);
+	}
 
-.discord-widget .widget-body {
-    background-image: url(https://static.wikia.nocookie.net/youtube/images/6/68/Discord_Widget.png);
-    background-position: top;
-    background-size: cover;
-}
+	.widget-footer {
+    	border-top: 3px ridge var(--dc-wg);
+	}
 
-.discord-widget .widget-member-avatar img {
-    border: 2px solid #ed0000;
-    background-color: #ed0000;
-}
+	.widget-body {
+    	background-image: url(https://static.wikia.nocookie.net/youtube/images/6/68/Discord_Widget.png);
+    	background-position: top;
+    	background-size: cover;
+	}
 
-.discord-widget .widget-member .widget-member-name {
-    background-color: #ed0000;
-}
+	.widget-member-avatar img {
+    	border: 2px solid var(--dc-wg);
+    	background-color: var(--dc-wg);
+	}
 
-.discord-widget .widget-btn-connect {
-    color: #fff;
-    background-color: #ed0000;
-    border: 1px solid #ed0000;
-}
+	.widget-member .widget-member-name {
+    	background-color: var(--dc-wg);
+	}
 
-.discord-widget .widget-btn-connect:hover {
-    opacity: 1;
-    background: #ed0000;
-    border: 1px solid #ed0000;
-    text-decoration: none;
-}
+	.widget-btn-connect {
+    	color: #fff;
+    	background-color: rgb(237 0 0 / 40%);
+    	border: none;
+	}
 
-.discord-widget .widget-role-name {
-    color: #fff;
-    text-shadow: 0 0 5px #fff;
-    background: #ed0000 url(https://static.wikia.nocookie.net/youtube/images/2/2e/Discord_Widget_Icon.png) no-repeat right;
-    background-size: 20;
-    padding: .45em;
-    border-radius: 5px;
-}
+	.widget-btn-connect:hover {
+    	opacity: 1;
+    	background: rgb(237 0 0 / 80%);
+    	border: 1px solid var(--dc-wg);
+    	text-decoration: none;
+	}
 
-.discord-widget .widget-body .widget-role-name {
-    color: #fff;
-}
+	.widget-role-name {
+    	color: #fff;
+    	text-shadow: 0 0 5px #fff;
+    	background: var(--dc-wg) url(https://static.wikia.nocookie.net/youtube/images/2/2e/Discord_Widget_Icon.png) no-repeat right;
+    	background-size: 20;
+    	padding: .45em;
+    	border-radius: 5px;
+	}
 
-.discord-widget .widget-theme-dark .widget-role-name {
-    color: #fff;
-    background: #ed0000;
-    padding: 5px;
-    border-radius: 5px;
-}
+	.widget-body .widget-role-name {
+    	color: #fff;
+	}
 
-.discord-widget .widget-body::-webkit-scrollbar {
-	width: 10;
-}
+	.widget-theme-dark .widget-role-name {
+    	color: #fff;
+    	background: var(--dc-wg);
+    	padding: 5px;
+    	border-radius: 5px;
+	}
 
-.discord-widget .widget-body::-webkit-scrollbar-track { 
-	background: transparent;
-	margin: 3px 0;
-}
+	.widget-body::-webkit-scrollbar {
+		width: 10;
+	}
 
-.discord-widget .widget-body::-webkit-scrollbar-thumb {
-	background:#ed0000;
-	border: 3px solid #3a3a3a;
-	border-radius: 10px;
+	.widget-body::-webkit-scrollbar-track {
+		background: transparent;
+		margin: 3px 0;
+	}
+
+	.widget-body::-webkit-scrollbar-thumb {
+		background:var(--dc-wg);
+		border: 3px solid #3a3a3a;
+		border-radius: 10px;
+	}
 }
 
 /* requested by markus */
 .rail-module.discord-module {
     padding-block: 1rem;
-}
-
-/* rail module button to discussions */
-#discussions-button {
-	text-align: center;
 }
 
 .discussions-button a {
@@ -382,6 +383,26 @@
 /* rail module h2 header */
 .WikiaRail .rail-module h2 {
 	text-transform: uppercase;
+}
+
+/* for userblogs and links section of the rail module */
+.RailModuleLink {
+	text-align: center;
+}
+
+.RailModuleLink .wds-button {
+	background: rgb(255 0 0 / 70%);
+	color: var(--theme-body-text-color)
+}
+
+.RailModuleLink .wds-button:hover {
+	background: #990000;
+	color: white
+}
+
+/* wikitubia report button font-size change to make the year appear on the same line with the other content */
+#userblog-report span {
+	font-size: 85%
 }
 
 /* Wikia toolbar decoration */
@@ -473,12 +494,12 @@
 	padding: 1em;
 }
 
-.theme-fandomdesktop-dark :is(.mpwt-module, a.widget-btn-connect,
+.theme-fandomdesktop-dark.page-Main_Page :is(.mpwt-module, a.widget-btn-connect,
 .DiscordWidget .widget-header .widget-header-count, .mpwt-socials [role="article"].rss_item) {
 	color: white;
 }
 
-.theme-fandomdesktop-light :is(.mpwt-module, a.widget-btn-connect, 
+.theme-fandomdesktop-light.page-Main_Page :is(.mpwt-module, a.widget-btn-connect, 
 .DiscordWidget .widget-header .widget-header-count, .mpwt-socials [role="article"].rss_item) {
 	color: black;
 }
