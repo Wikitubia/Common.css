@@ -7,22 +7,14 @@
 	/*======================================
 	#2 PAGE VIEWING AND DESIGN
 	======================================*/
-/* logo adjustments to the crisp svg files by [[User:Tuxedoshlyukha]] (daler) */
-[data-theme="light"] {
-    --crisp-logo: url('https://static.wikia.nocookie.net/youtube/images/9/9c/Wikitubia_wordmark_black.svg/revision/latest?cb=20220725031349');
-}
-
-[data-theme="dark"] {
-    --crisp-logo: url('https://static.wikia.nocookie.net/youtube/images/9/9b/Wikitubia_wordmark.svg/revision/latest?cb=20220725030712');
-}
-
+/* Site logo adjustment [[User:Tuxedoshlyukha]] (daler) */
 [data-test="fandom-community-header-community-logo"] {
 	content: var(--crisp-logo);
 }
 
-/* if pages wanna use the logo */
+/* scaling size of logo if pages want to use it (desktop) */
 .logo-swap {
-	content: var(--crisp-logo);
+	width: 21.5em;
 }
 
 /* Font change for page and right hand rail */
@@ -47,6 +39,11 @@
 
 .theme-fandomdesktop-light {
 	--toc-background: #f18282;
+}
+
+/* Color match to the accompanied text */
+.tocnumber {
+    --theme-page-text-color--rgb: var(--theme-page-text-color);
 }
 
 /* Page gallery decoration for individual files */
