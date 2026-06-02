@@ -8,7 +8,7 @@
 	#2 PAGE VIEWING AND DESIGN
 	======================================*/
 /* Site logo adjustment [[User:Tuxedoshlyukha]] (daler) */
-[data-test="fandom-community-header-community-logo"] {
+/*[data-test="fandom-community-header-community-logo"] {
 	content: var(--crisp-logo);
 }
 
