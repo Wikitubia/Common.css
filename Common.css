@@ -787,3 +787,7 @@
 	overflow: hidden;
 	overflow-y: auto;
 }
+/* Hide text title in the sticky header bar */
+body .fandom-sticky-header__sitename {
+    display: none;
+}
